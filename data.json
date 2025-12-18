@@ -1,0 +1,148 @@
+{
+  "parts": [
+    {
+      "id": "BLT-001",
+      "name": "六角ボルト M10",
+      "category": "締結部品",
+      "inspection_items": [
+        "ねじ山の損傷・摩耗確認",
+        "頭部の変形・亀裂確認",
+        "表面の錆・腐食確認",
+        "寸法測定（外径・ピッチ）"
+      ],
+      "cautions": [
+        "トルク管理が重要（規定トルク: 45-55 N·m）",
+        "再使用回数は最大3回まで",
+        "めっき剥がれがある場合は交換"
+      ],
+      "storage": "A棟-1F-棚番号A-12",
+      "image_description": "ボルト頭部・ねじ山部の検査ポイント",
+      "image_file": null
+    },
+    {
+      "id": "BRG-001",
+      "name": "深溝玉軸受 6205",
+      "category": "軸受部品",
+      "inspection_items": [
+        "外輪・内輪の傷・摩耗確認",
+        "ボールの転がり音確認",
+        "グリース状態の確認",
+        "ガタつき・遊びの測定"
+      ],
+      "cautions": [
+        "素手で触らない（手の油分が錆の原因）",
+        "落下させた場合は使用不可",
+        "保管時は防錆油を塗布"
+      ],
+      "storage": "A棟-2F-棚番号B-05",
+      "image_description": "軸受の内輪・外輪・ボール部の検査ポイント",
+      "image_file": null
+    },
+    {
+      "id": "GER-001",
+      "name": "平歯車 モジュール2",
+      "category": "伝動部品",
+      "inspection_items": [
+        "歯面の摩耗・ピッチング確認",
+        "歯の欠け・亀裂確認",
+        "歯底の疲労亀裂確認",
+        "バックラッシュ測定"
+      ],
+      "cautions": [
+        "歯面の摩耗が0.1mm以上で交換",
+        "異音発生時は即時点検",
+        "潤滑油の適正量を維持"
+      ],
+      "storage": "B棟-1F-棚番号C-08",
+      "image_description": "歯車の歯面・歯底の検査ポイント",
+      "image_file": null
+    },
+    {
+      "id": "SFT-001",
+      "name": "駆動シャフト φ25",
+      "category": "軸部品",
+      "inspection_items": [
+        "表面傷・打痕の確認",
+        "曲がり・振れの測定",
+        "キー溝の摩耗確認",
+        "軸端のねじ部確認"
+      ],
+      "cautions": [
+        "振れ許容値: 0.02mm以内",
+        "表面粗さ: Ra1.6以下を維持",
+        "運搬時は保護キャップを装着"
+      ],
+      "storage": "B棟-1F-棚番号D-03",
+      "image_description": "シャフト全長・キー溝部の検査ポイント",
+      "image_file": null
+    },
+    {
+      "id": "SPR-001",
+      "name": "圧縮コイルばね",
+      "category": "弾性部品",
+      "inspection_items": [
+        "自由長の測定",
+        "外径・線径の確認",
+        "表面の傷・錆確認",
+        "へたり（永久変形）確認"
+      ],
+      "cautions": [
+        "自由長が規定値-5%でへたり判定",
+        "座面の直角度を確認",
+        "組付け時は潤滑剤を塗布"
+      ],
+      "storage": "A棟-1F-棚番号A-20",
+      "image_description": "ばねの座面・コイル部の検査ポイント",
+      "image_file": null
+    },
+    {
+      "id": "SLD-001",
+      "name": "リニアガイド LMガイド",
+      "category": "案内部品",
+      "inspection_items": [
+        "レール面の傷・錆確認",
+        "ブロックの動作確認",
+        "予圧状態の確認",
+        "グリース状態の確認"
+      ],
+      "cautions": [
+        "取付面の平面度: 0.02mm/300mm以内",
+        "定期的なグリース補給が必要",
+        "衝撃荷重は厳禁"
+      ],
+      "storage": "B棟-2F-棚番号E-15",
+      "image_description": "レール面・ブロック部の検査ポイント",
+      "image_file": null
+    },
+    {
+      "id": "SAMPLE",
+      "name": "サンプル",
+      "category": "締結部品",
+      "inspection_items": [
+        "a",
+        "b",
+        "c"
+      ],
+      "cautions": [
+        "d"
+      ],
+      "storage": "TEST",
+      "image_description": "f",
+      "image_file": "SAMPLE.png"
+    },
+    {
+      "id": "SAMPLE2",
+      "name": "サンプル2",
+      "category": "軸部品",
+      "inspection_items": [
+        "z"
+      ],
+      "cautions": [
+        "y"
+      ],
+      "storage": "TEST2",
+      "image_description": "x",
+      "image_file": "SAMPLE2.png"
+    }
+  ]
+}
