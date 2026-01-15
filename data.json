@@ -17,7 +17,14 @@
       ],
       "storage": "A棟-1F-棚番号A-12",
       "image_description": "ボルト頭部・ねじ山部の検査ポイント",
-      "image_file": null
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60 アセンブリ",
+          "notes": "主軸固定用"
+        }
+      ]
     },
     {
       "id": "BRG-001",
@@ -36,7 +43,14 @@
       ],
       "storage": "A棟-2F-棚番号B-05",
       "image_description": "軸受の内輪・外輪・ボール部の検査ポイント",
-      "image_file": null
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60 アセンブリ",
+          "notes": "回転機構用"
+        }
+      ]
     },
     {
       "id": "GER-001",
@@ -55,7 +69,8 @@
       ],
       "storage": "B棟-1F-棚番号C-08",
       "image_description": "歯車の歯面・歯底の検査ポイント",
-      "image_file": null
+      "image_file": null,
+      "required_products": []
     },
     {
       "id": "SFT-001",
@@ -74,7 +89,14 @@
       ],
       "storage": "B棟-1F-棚番号D-03",
       "image_description": "シャフト全長・キー溝部の検査ポイント",
-      "image_file": null
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60 アセンブリ",
+          "notes": "駆動系統用"
+        }
+      ]
     },
     {
       "id": "SPR-001",
@@ -93,7 +115,8 @@
       ],
       "storage": "A棟-1F-棚番号A-20",
       "image_description": "ばねの座面・コイル部の検査ポイント",
-      "image_file": null
+      "image_file": null,
+      "required_products": []
     },
     {
       "id": "SLD-001",
@@ -112,7 +135,8 @@
       ],
       "storage": "B棟-2F-棚番号E-15",
       "image_description": "レール面・ブロック部の検査ポイント",
-      "image_file": null
+      "image_file": null,
+      "required_products": []
     },
     {
       "id": "SAMPLE",
@@ -128,7 +152,8 @@
       ],
       "storage": "TEST",
       "image_description": "f",
-      "image_file": "SAMPLE.png"
+      "image_file": "SAMPLE.png",
+      "required_products": []
     },
     {
       "id": "SAMPLE2",
@@ -142,7 +167,23 @@
       ],
       "storage": "TEST2",
       "image_description": "x",
-      "image_file": "SAMPLE2.png"
+      "image_file": "SAMPLE2.png",
+      "required_products": []
+    },
+    {
+      "id": "TUA60-04203-5A0",
+      "name": "シャフトA",
+      "category": "締結部品",
+      "inspection_items": [
+        "test"
+      ],
+      "cautions": [
+        "特になし"
+      ],
+      "storage": "test",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": []
     }
   ]
 }

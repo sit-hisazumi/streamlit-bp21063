@@ -247,6 +247,17 @@ if parts_data:
 else:
     categories = ["すべて"]
 
+# 製品一覧を取得（required_productsから抽出）
+products_set = set()
+for part in parts_data:
+    for product in part.get("required_products", []):
+        products_set.add(
+            (product["product_id"], product["product_name"])
+        )
+products = ["すべて"] + sorted(
+    [f"{pid} - {pname}" for pid, pname in products_set]
+)
+
 # セッション状態の初期化
 if "selected_part" not in st.session_state:
     st.session_state.selected_part = None
@@ -257,8 +268,29 @@ if "show_inspection_form" not in st.session_state:
 if "inspection_results" not in st.session_state:
     st.session_state.inspection_results = {}
 
+# Query parameter handling for navigation
+query_params = st.query_params
+current_view = query_params.get("view", "main")
+selected_part_id_from_url = query_params.get("part_id", None)
+selected_product_id_from_url = query_params.get("product_id", None)
+
 # サイドバー（検索・フィルタ）
 st.sidebar.title("🔍 検索・フィルタ")
+
+# Home button if not on main view
+if current_view != "main":
+    if st.sidebar.button("🏠 ホームに戻る", width="stretch"):
+        st.query_params.clear()
+        st.rerun()
+    st.sidebar.markdown("---")
+
+# 製品で絞り込み
+selected_product = st.sidebar.selectbox(
+    "製品で絞り込み",
+    products,
+    help="特定の製品に必要な部品のみを表示"
+)
+
 search_query = st.sidebar.text_input(
     "部品名・IDで検索", placeholder="例: ボルト, BLT-001"
 )
@@ -266,6 +298,17 @@ selected_category = st.sidebar.selectbox("カテゴリで絞り込み", categori
 
 # フィルタリング処理
 filtered_parts = parts_data.copy()
+
+# 製品による絞り込み
+if selected_product != "すべて":
+    product_id = selected_product.split(" - ")[0]
+    filtered_parts = [
+        part for part in filtered_parts
+        if any(
+            p["product_id"] == product_id
+            for p in part.get("required_products", [])
+        )
+    ]
 
 if search_query:
     filtered_parts = [
@@ -284,101 +327,189 @@ if selected_category != "すべて":
 st.sidebar.markdown("---")
 st.sidebar.info(f"該当部品: {len(filtered_parts)} 件")
 
-# 部品追加ボタン
+# 部品追加ボタン（まだセッションステートを使用）
 st.sidebar.markdown("---")
 if st.sidebar.button("➕ 新規部品を追加", width="stretch"):
     st.session_state.show_add_form = not st.session_state.show_add_form
-    st.session_state.show_inspection_form = False
 
-# 検査表ボタン
+# 検査表ボタン（ページ遷移に変更）
 if st.sidebar.button("📋 検査表を作成", width="stretch"):
-    st.session_state.show_inspection_form = not st.session_state.show_inspection_form
-    st.session_state.show_add_form = False
+    st.query_params["view"] = "inspection_form"
+    st.rerun()
 
-# メインエリア
-st.title("🔍 部品検査箇所表示システム")
-st.markdown("検査する部品を選択して、検査項目・注意点・保管場所を確認できます。")
-st.markdown("---")
 
-# 部品追加フォーム
-if st.session_state.show_add_form:
-    st.subheader("➕ 新規部品登録")
+# ============================================================
+# View Functions
+# ============================================================
 
-    with st.form("add_part_form"):
-        col1, col2 = st.columns(2)
+def show_part_details_page(part_id, parts_data):
+    """Display detailed part information page"""
+    # Find the selected part
+    part_data = next((p for p in parts_data if p["id"] == part_id), None)
 
-        with col1:
-            new_id = st.text_input("部品ID *", placeholder="例: BLT-002")
-            new_name = st.text_input("部品名 *", placeholder="例: 六角ボルト M12")
-            new_category = st.text_input("カテゴリ *", placeholder="例: 締結部品")
-            new_storage = st.text_input(
-                "保管場所 *", placeholder="例: A棟-1F-棚番号A-15"
-            )
+    if not part_data:
+        st.error(f"部品ID '{part_id}' が見つかりません。")
+        if st.button("ホームに戻る"):
+            st.query_params.clear()
+            st.rerun()
+        return
 
-        with col2:
-            new_inspection = st.text_area(
-                "検査項目 *（1行に1項目）",
-                placeholder="ねじ山の損傷確認\n頭部の変形確認\n表面の錆確認",
-                height=100
-            )
-            new_cautions = st.text_area(
-                "注意点（1行に1項目）",
-                placeholder="トルク管理が重要\n再使用回数に注意",
-                height=100
-            )
-            new_image_desc = st.text_input(
-                "検査箇所イメージの説明",
-                placeholder="例: ボルト頭部・ねじ山部の検査ポイント"
-            )
-
-        # 画像アップロード
-        uploaded_image = st.file_uploader(
-            "検査箇所の画像（任意）",
-            type=["png", "jpg", "jpeg"],
-            help="PNG, JPG, JPEG形式の画像をアップロードできます"
-        )
-
-        submitted = st.form_submit_button("登録", width="stretch")
-
-        if submitted:
-            # バリデーション
-            if not new_id or not new_name or not new_category or not new_storage:
-                st.error("必須項目（*）を入力してください。")
-            elif any(part["id"] == new_id for part in parts_data):
-                st.error(f"部品ID '{new_id}' は既に存在します。")
-            elif not new_inspection.strip():
-                st.error("検査項目を1つ以上入力してください。")
-            else:
-                # 新規部品データを作成
-                new_part = {
-                    "id": new_id,
-                    "name": new_name,
-                    "category": new_category,
-                    "inspection_items": [
-                        item.strip() for item in new_inspection.split("\n")
-                        if item.strip()
-                    ],
-                    "cautions": [
-                        item.strip() for item in new_cautions.split("\n")
-                        if item.strip()
-                    ] if new_cautions.strip() else ["特になし"],
-                    "storage": new_storage,
-                    "image_description": (
-                        new_image_desc if new_image_desc else "検査箇所"
-                    )
-                }
-
-                # JSONに保存（画像も含む）
-                save_part(new_part, uploaded_image)
-                st.success(f"部品 '{new_name}' を登録しました！")
-                st.session_state.show_add_form = False
-                st.rerun()
-
+    # Title
+    st.title(f"📋 {part_data['name']}")
     st.markdown("---")
 
-# 検査表フォーム
-if st.session_state.show_inspection_form:
-    st.subheader("📋 検査表入力")
+    # 2列レイアウトで詳細表示
+    col1, col2 = st.columns([1, 1])
+
+    with col1:
+        st.markdown(f"### {part_data['name']}")
+        st.markdown(f"**部品番号:** {part_data['id']}")
+        st.markdown(f"**カテゴリ:** {part_data['category']}")
+        st.markdown(f"**保管場所:** 📍 {part_data['storage']}")
+
+        # 必須製品
+        if part_data.get("required_products"):
+            st.markdown("#### 🏭 このパーツを使用する製品")
+            for product in part_data["required_products"]:
+                st.info(
+                    f"**{product['product_id']}** - "
+                    f"{product['product_name']}"
+                )
+                if product.get('notes'):
+                    st.caption(f"用途: {product['notes']}")
+
+        # 検査項目
+        st.markdown("#### ✅ 検査項目")
+        for item in part_data["inspection_items"]:
+            st.markdown(f"- {item}")
+
+        # 注意点
+        st.markdown("#### ⚠️ 注意点")
+        for caution in part_data["cautions"]:
+            st.warning(caution)
+
+    with col2:
+        # 検査箇所画像
+        st.markdown("#### 🖼️ 検査箇所イメージ")
+
+        image_path = get_image_path(part_data)
+        if image_path:
+            # 画像がある場合は表示
+            st.image(
+                image_path,
+                caption=part_data.get("image_description", "検査箇所"),
+                width="stretch"
+            )
+        else:
+            # プレースホルダー表示
+            st.markdown(
+                f"""
+                <div style="
+                    background-color: #f5f5f5;
+                    border: 2px dashed #ccc;
+                    border-radius: 10px;
+                    padding: 60px 20px;
+                    text-align: center;
+                    color: #666;
+                ">
+                    <div style="font-size: 48px;">🔍</div>
+                    <div style="margin-top: 10px; font-weight: bold;">
+                        {part_data.get('image_description', '検査箇所')}
+                    </div>
+                    <div style="margin-top: 5px; font-size: 12px; color: #999;">
+                        ※ 画像が登録されていません
+                    </div>
+                </div>
+                """,
+                unsafe_allow_html=True
+            )
+
+
+def show_product_details_page(product_id, product_name, parts_data):
+    """Display detailed product information page"""
+    # Find all parts that use this product
+    related_parts = [
+        part for part in parts_data
+        if any(
+            p["product_id"] == product_id
+            for p in part.get("required_products", [])
+        )
+    ]
+
+    if not related_parts:
+        st.error(f"製品 '{product_name}' に関連する部品が見つかりません。")
+        if st.button("ホームに戻る"):
+            st.query_params.clear()
+            st.rerun()
+        return
+
+    # Title
+    st.title(f"🏭 {product_name}")
+    st.markdown(f"**製品ID:** {product_id}")
+    st.info(f"この製品には **{len(related_parts)}個** の部品が必要です。")
+    st.markdown("---")
+
+    # Display all related parts
+    st.subheader("📦 必要な部品一覧")
+
+    for part in related_parts:
+        # Find the product note for this specific part
+        product_note = next(
+            (
+                p["notes"] for p in part.get("required_products", [])
+                if p["product_id"] == product_id
+            ),
+            ""
+        )
+
+        with st.expander(
+            f"**{part['id']}** - {part['name']} "
+            f"({part['category']})",
+            expanded=False
+        ):
+            col1, col2 = st.columns([1, 1])
+
+            with col1:
+                if product_note:
+                    st.markdown(f"**用途:** {product_note}")
+                st.markdown(f"**保管場所:** 📍 {part['storage']}")
+
+                # 検査項目
+                st.markdown("**✅ 検査項目:**")
+                for item in part["inspection_items"]:
+                    st.markdown(f"- {item}")
+
+                # 注意点
+                st.markdown("**⚠️ 注意点:**")
+                for caution in part["cautions"]:
+                    st.caption(f"• {caution}")
+
+            with col2:
+                image_path = get_image_path(part)
+                if image_path:
+                    st.image(
+                        image_path,
+                        caption=part.get("image_description", "検査箇所"),
+                        width="stretch"
+                    )
+                else:
+                    st.caption(part.get("image_description", "検査箇所"))
+
+            # Button to view full part details
+            if st.button(
+                "詳細を見る",
+                key=f"view_part_{part['id']}",
+                width="stretch"
+            ):
+                st.query_params["view"] = "part_details"
+                st.query_params["part_id"] = part["id"]
+                st.rerun()
+
+
+def show_inspection_form_page(parts_data):
+    """Display inspection form page"""
+    st.title("📋 検査表入力")
+    st.markdown("---")
 
     # 検査項目をテンプレートから読み込み
     inspection_items = load_inspection_template()
@@ -454,7 +585,9 @@ if st.session_state.show_inspection_form:
                 st.warning(caution)
 
             # 保管場所
-            st.markdown(f"**📍 保管場所:** {selected_part_info['storage']}")
+            st.markdown(
+                f"**📍 保管場所:** {selected_part_info['storage']}"
+            )
         else:
             st.info("👆 対象部品を選択すると、検査項目と注意点が表示されます")
 
@@ -533,17 +666,17 @@ if st.session_state.show_inspection_form:
         # 一つでも不合格があれば総合不合格
         if "不合格" in all_judgments:
             overall_judgment = "不合格"
-            st.error(f"🔴 総合判定: **{overall_judgment}**（不合格項目があります）")
+            st.error(
+                f"🔴 総合判定: **{overall_judgment}**（不合格項目があります）"
+            )
         else:
             overall_judgment = "合格"
-            st.success(f"🟢 総合判定: **{overall_judgment}**（全項目合格）")
+            st.success(
+                f"🟢 総合判定: **{overall_judgment}**（全項目合格）"
+            )
     else:
         overall_judgment = ""
         st.warning("⚠️ 全ての検査項目を入力すると総合判定が表示されます")
-
-    # 入力状況の表示
-    filled_count = len(all_judgments)
-    total_count = len(inspection_items)
 
     # PDF出力ボタン
     st.markdown("---")
@@ -596,150 +729,300 @@ if st.session_state.show_inspection_form:
         st.download_button(
             label="📥 PDFをダウンロード",
             data=pdf_bytes,
-            file_name=f"inspection_{selected_part_data['id']}_{inspection_date.strftime('%Y%m%d')}.pdf",
+            file_name=(
+                f"inspection_{selected_part_data['id']}_"
+                f"{inspection_date.strftime('%Y%m%d')}.pdf"
+            ),
             mime="application/pdf",
             type="primary"
         )
 
-        st.success("✅ PDF出力の準備ができました！上のボタンからダウンロードしてください。")
+        st.success(
+            "✅ PDF出力の準備ができました！"
+            "上のボタンからダウンロードしてください。"
+        )
+
+
+# ============================================================
+# Main Routing Logic
+# ============================================================
+
+# Check which view to show based on query parameters
+if current_view == "part_details" and selected_part_id_from_url:
+    show_part_details_page(selected_part_id_from_url, parts_data)
+elif current_view == "product_details" and selected_product_id_from_url:
+    # Extract product name from the product ID
+    product_name = None
+    for part in parts_data:
+        for product in part.get("required_products", []):
+            if product["product_id"] == selected_product_id_from_url:
+                product_name = product["product_name"]
+                break
+        if product_name:
+            break
+
+    if product_name:
+        show_product_details_page(
+            selected_product_id_from_url,
+            product_name,
+            parts_data
+        )
+    else:
+        st.error(f"製品ID '{selected_product_id_from_url}' が見つかりません。")
+        if st.button("ホームに戻る"):
+            st.query_params.clear()
+            st.rerun()
+elif current_view == "inspection_form":
+    show_inspection_form_page(parts_data)
+else:
+    # Show main page
+    # メインエリア
+    st.title("🔍 部品検査箇所表示システム")
+    st.markdown(
+        "検査する部品を選択して、検査項目・注意点・保管場所を確認できます。"
+    )
+
+    # 製品フィルタが有効な場合は表示
+    if selected_product != "すべて":
+        st.info(
+            f"🏭 **製品フィルタ適用中:** {selected_product} "
+            f"に必要な部品のみを表示しています"
+        )
 
     st.markdown("---")
 
-# 部品カード一覧
-st.subheader("📋 部品一覧")
+    # 製品一覧セクション
+    if products and len(products) > 1:  # If there are products besides "すべて"
+        st.subheader("🏭 製品から探す")
+        st.caption("製品を選択すると、必要な部品一覧が表示されます")
 
-if not filtered_parts:
-    st.warning("該当する部品が見つかりません。検索条件を変更してください。")
-else:
-    # 3列のグリッドレイアウト
-    cols = st.columns(3)
+        # Create product cards in columns
+        product_cols = st.columns(3)
 
-    for idx, part in enumerate(filtered_parts):
-        col_idx = idx % 3
-        with cols[col_idx]:
-            # カードのスタイル
-            is_selected = st.session_state.selected_part == part["id"]
-            border_color = "#1E88E5" if is_selected else "#ddd"
-            bg_color = "#E3F2FD" if is_selected else "#fff"
+        # Extract product list (excluding "すべて")
+        product_list = [p for p in products if p != "すべて"]
 
-            st.markdown(
-                f"""
-                <div style="
-                    background-color: {bg_color};
-                    border: 2px solid {border_color};
-                    border-radius: 10px;
-                    padding: 15px;
-                    margin-bottom: 10px;
-                    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-                ">
-                    <div style="font-size: 12px; color: #666;">{part['id']}</div>
-                    <div style="font-size: 18px; font-weight: bold; margin: 5px 0;">
-                        {part['name']}
-                    </div>
-                    <div style="
-                        display: inline-block;
-                        background-color: #E8F5E9;
-                        color: #2E7D32;
-                        padding: 3px 10px;
-                        border-radius: 15px;
-                        font-size: 12px;
-                    ">{part['category']}</div>
-                </div>
-                """,
-                unsafe_allow_html=True
-            )
+        for idx, product_str in enumerate(product_list):
+            col_idx = idx % 3
+            with product_cols[col_idx]:
+                product_id = product_str.split(" - ")[0]
+                product_name = " - ".join(product_str.split(" - ")[1:])
 
-            if st.button("選択", key=f"btn_{part['id']}", width="stretch"):
-                st.session_state.selected_part = part["id"]
-                st.rerun()
-
-# 部品詳細表示
-st.markdown("---")
-st.subheader("📝 部品詳細")
-
-if st.session_state.selected_part:
-    # 選択された部品を取得
-    selected_part_data = next(
-        (part for part in parts_data
-         if part["id"] == st.session_state.selected_part),
-        None
-    )
-
-    if selected_part_data:
-        # 2列レイアウトで詳細表示
-        col1, col2 = st.columns([1, 1])
-
-        with col1:
-            st.markdown(f"### {selected_part_data['name']}")
-            st.markdown(f"**部品番号:** {selected_part_data['id']}")
-            st.markdown(f"**カテゴリ:** {selected_part_data['category']}")
-            st.markdown(f"**保管場所:** 📍 {selected_part_data['storage']}")
-
-            # 検査項目
-            st.markdown("#### ✅ 検査項目")
-            for item in selected_part_data["inspection_items"]:
-                st.markdown(f"- {item}")
-
-            # 注意点
-            st.markdown("#### ⚠️ 注意点")
-            for caution in selected_part_data["cautions"]:
-                st.warning(caution)
-
-        with col2:
-            # 検査箇所画像
-            st.markdown("#### 🖼️ 検査箇所イメージ")
-
-            image_path = get_image_path(selected_part_data)
-            if image_path:
-                # 画像がある場合は表示
-                st.image(
-                    image_path,
-                    caption=selected_part_data.get(
-                        "image_description", "検査箇所"
-                    ),
-                    width="stretch"
+                # Count parts for this product
+                part_count = sum(
+                    1 for part in parts_data
+                    if any(
+                        p["product_id"] == product_id
+                        for p in part.get("required_products", [])
+                    )
                 )
-            else:
-                # プレースホルダー表示
+
                 st.markdown(
                     f"""
                     <div style="
-                        background-color: #f5f5f5;
-                        border: 2px dashed #ccc;
+                        background-color: #fff;
+                        border: 2px solid #4CAF50;
                         border-radius: 10px;
-                        padding: 60px 20px;
-                        text-align: center;
-                        color: #666;
+                        padding: 15px;
+                        margin-bottom: 10px;
+                        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
                     ">
-                        <div style="font-size: 48px;">🔍</div>
-                        <div style="margin-top: 10px; font-weight: bold;">
-                            {selected_part_data.get(
-                                'image_description', '検査箇所'
-                            )}
-                        </div>
-                        <div style="margin-top: 5px; font-size: 12px; color: #999;">
-                            ※ 画像が登録されていません
-                        </div>
+                        <div style="
+                            font-size: 14px;
+                            font-weight: bold;
+                            color: #4CAF50;
+                        ">🏭 {product_id}</div>
+                        <div style="
+                            font-size: 16px;
+                            font-weight: bold;
+                            margin: 5px 0;
+                        ">{product_name}</div>
+                        <div style="
+                            font-size: 12px;
+                            color: #666;
+                        ">必要部品数: {part_count}個</div>
                     </div>
                     """,
                     unsafe_allow_html=True
                 )
 
-            # 選択解除ボタン
-            st.markdown("")
-            if st.button("選択を解除", width="stretch"):
-                st.session_state.selected_part = None
-                st.rerun()
-else:
-    st.info("👆 上の一覧から部品を選択すると、詳細情報が表示されます。")
+                if st.button(
+                    "製品詳細を見る",
+                    key=f"product_{product_id}",
+                    width="stretch"
+                ):
+                    st.query_params["view"] = "product_details"
+                    st.query_params["product_id"] = product_id
+                    st.rerun()
 
-# フッター
-st.markdown("---")
-st.markdown(
-    """
-    <div style="text-align: center; color: #666; font-size: 12px;">
-        部品検査箇所表示システム v1.0
-    </div>
-    """,
-    unsafe_allow_html=True
+        st.markdown("---")
+
+    # 部品追加フォーム
+    if st.session_state.show_add_form:
+        st.subheader("➕ 新規部品登録")
+
+        with st.form("add_part_form"):
+            col1, col2 = st.columns(2)
+
+            with col1:
+                new_id = st.text_input("部品ID *", placeholder="例: BLT-002")
+                new_name = st.text_input("部品名 *", placeholder="例: 六角ボルト M12")
+                new_category = st.text_input("カテゴリ *", placeholder="例: 締結部品")
+                new_storage = st.text_input(
+                    "保管場所 *", placeholder="例: A棟-1F-棚番号A-15"
+                )
+
+            with col2:
+                new_inspection = st.text_area(
+                    "検査項目 *（1行に1項目）",
+                    placeholder="ねじ山の損傷確認\n頭部の変形確認\n表面の錆確認",
+                    height=100
+                )
+                new_cautions = st.text_area(
+                    "注意点（1行に1項目）",
+                    placeholder="トルク管理が重要\n再使用回数に注意",
+                    height=100
+                )
+                new_image_desc = st.text_input(
+                    "検査箇所イメージの説明",
+                    placeholder="例: ボルト頭部・ねじ山部の検査ポイント"
+                )
+                new_required_products = st.text_area(
+                    "必須製品（任意、1行に1製品）",
+                    placeholder="TUA60|TUA60 アセンブリ|主軸固定用\nTUA70|TUA70 ユニット|予備用",
+                    height=80,
+                    help="形式: 製品ID|製品名|用途（パイプ区切り）"
+                )
+
+            # 画像アップロード
+            uploaded_image = st.file_uploader(
+                "検査箇所の画像（任意）",
+                type=["png", "jpg", "jpeg"],
+                help="PNG, JPG, JPEG形式の画像をアップロードできます"
+            )
+
+            submitted = st.form_submit_button("登録", width="stretch")
+
+            if submitted:
+                # バリデーション
+                if not new_id or not new_name or not new_category or not new_storage:
+                    st.error("必須項目（*）を入力してください。")
+                elif any(part["id"] == new_id for part in parts_data):
+                    st.error(f"部品ID '{new_id}' は既に存在します。")
+                elif not new_inspection.strip():
+                    st.error("検査項目を1つ以上入力してください。")
+                else:
+                    # 必須製品のパース
+                    required_products = []
+                    if new_required_products.strip():
+                        for line in new_required_products.split("\n"):
+                            if line.strip():
+                                parts_info = [p.strip() for p in line.split("|")]
+                                if len(parts_info) >= 2:
+                                    product = {
+                                        "product_id": parts_info[0],
+                                        "product_name": parts_info[1],
+                                        "notes": (
+                                            parts_info[2]
+                                            if len(parts_info) >= 3
+                                            else ""
+                                        )
+                                    }
+                                    required_products.append(product)
+
+                    # 新規部品データを作成
+                    new_part = {
+                        "id": new_id,
+                        "name": new_name,
+                        "category": new_category,
+                        "inspection_items": [
+                            item.strip() for item in new_inspection.split("\n")
+                            if item.strip()
+                        ],
+                        "cautions": [
+                            item.strip() for item in new_cautions.split("\n")
+                            if item.strip()
+                        ] if new_cautions.strip() else ["特になし"],
+                        "storage": new_storage,
+                        "image_description": (
+                            new_image_desc if new_image_desc else "検査箇所"
+                        ),
+                        "required_products": required_products
+                    }
+
+                    # JSONに保存（画像も含む）
+                    save_part(new_part, uploaded_image)
+                    st.success(f"部品 '{new_name}' を登録しました！")
+                    st.session_state.show_add_form = False
+                    st.rerun()
+
+        st.markdown("---")
+
+    # 部品カード一覧
+    st.subheader("📋 部品一覧")
+
+
+    # 部品カード一覧
+    st.subheader("📋 部品一覧")
+
+    if not filtered_parts:
+        st.warning("該当する部品が見つかりません。検索条件を変更してください。")
+    else:
+        # 3列のグリッドレイアウト
+        cols = st.columns(3)
+
+        for idx, part in enumerate(filtered_parts):
+            col_idx = idx % 3
+            with cols[col_idx]:
+                # カードのスタイル
+                is_selected = st.session_state.selected_part == part["id"]
+                border_color = "#1E88E5" if is_selected else "#ddd"
+                bg_color = "#E3F2FD" if is_selected else "#fff"
+
+                st.markdown(
+                    f"""
+                    <div style="
+                        background-color: {bg_color};
+                        border: 2px solid {border_color};
+                        border-radius: 10px;
+                        padding: 15px;
+                        margin-bottom: 10px;
+                        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                    ">
+                        <div style="font-size: 12px; color: #666;">{part['id']}</div>
+                        <div style="font-size: 18px; font-weight: bold; margin: 5px 0;">
+                            {part['name']}
+                        </div>
+                        <div style="
+                            display: inline-block;
+                            background-color: #E8F5E9;
+                            color: #2E7D32;
+                            padding: 3px 10px;
+                            border-radius: 15px;
+                            font-size: 12px;
+                        ">{part['category']}</div>
+                    </div>
+                    """,
+                    unsafe_allow_html=True
+                )
+
+                if st.button(
+                    "詳細を見る",
+                    key=f"btn_{part['id']}",
+                    width="stretch"
+                ):
+                    st.query_params["view"] = "part_details"
+                    st.query_params["part_id"] = part["id"]
+                    st.rerun()
+
+
+    # フッター
+    st.markdown("---")
+    st.markdown(
+        """
+        <div style="text-align: center; color: #666; font-size: 12px;">
+            部品検査箇所表示システム v1.0
+        </div>
+        """,
+        unsafe_allow_html=True
 )
