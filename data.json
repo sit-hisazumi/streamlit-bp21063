@@ -2176,23 +2176,23 @@
       "id": "TUA70-11101-4B0",
       "name": "ｲﾝﾅｰﾌﾚｰﾑASSY(TUA70)",
       "category": "未設定",
-      "item_type": "45TUA70111014B0",
       "inspection_items": [
-        "未設定"
+        "test",
+        "test"
       ],
       "cautions": [
         "未設定"
       ],
       "storage": "未設定",
       "image_description": "検査箇所",
-      "image_file": null,
       "required_products": [
         {
           "product_id": "TUA70",
           "product_name": "TUA70",
           "notes": ""
         }
-      ]
+      ],
+      "image_file": "TUA70-11101-4B0.png"
     },
     {
       "id": "TUA70-S4-11113-400",
@@ -2308,23 +2308,22 @@
       "id": "TUA70-11601-4B0",
       "name": "ﾕﾆｯﾄﾍﾞｰｽASSY(TUA70)",
       "category": "未設定",
-      "item_type": "45TUA70116014B0",
       "inspection_items": [
-        "未設定"
+        "test"
       ],
       "cautions": [
         "未設定"
       ],
       "storage": "未設定",
       "image_description": "検査箇所",
-      "image_file": null,
       "required_products": [
         {
           "product_id": "TUA70",
           "product_name": "TUA70",
           "notes": ""
         }
-      ]
+      ],
+      "image_file": null
     },
     {
       "id": "TUA70-11610-500",

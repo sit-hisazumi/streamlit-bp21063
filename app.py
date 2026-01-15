@@ -58,6 +58,41 @@ def save_part(part_data, image_file=None):
     save_parts_data(parts)
 
 
+def update_part(part_id, updated_data, image_file=None):
+    """既存の部品を更新する（画像があれば保存）"""
+    parts = load_parts_data()
+
+    # 部品を検索
+    part_index = None
+    for idx, part in enumerate(parts):
+        if part["id"] == part_id:
+            part_index = idx
+            break
+
+    if part_index is None:
+        return False
+
+    # 画像を保存
+    if image_file is not None:
+        ext = os.path.splitext(image_file.name)[1]
+        image_filename = f"{updated_data['id']}{ext}"
+        image_path = os.path.join(IMAGES_DIR, image_filename)
+
+        with open(image_path, "wb") as f:
+            f.write(image_file.getbuffer())
+
+        updated_data["image_file"] = image_filename
+    else:
+        # 画像ファイルが指定されていない場合は既存の画像を保持
+        if "image_file" not in updated_data:
+            updated_data["image_file"] = parts[part_index].get("image_file")
+
+    # 部品を更新
+    parts[part_index] = updated_data
+    save_parts_data(parts)
+    return True
+
+
 def get_image_path(part):
     """部品の画像パスを取得する（存在する場合）"""
     if part.get("image_file"):
@@ -401,6 +436,7 @@ query_params = st.query_params
 current_view = query_params.get("view", "main")
 selected_part_id_from_url = query_params.get("part_id", None)
 selected_product_id_from_url = query_params.get("product_id", None)
+preselected_part_id_for_inspection = query_params.get("selected_part_id", None)
 
 # サイドバー（検索・フィルタ）
 st.sidebar.title("🔍 検索・フィルタ")
@@ -546,8 +582,22 @@ def show_part_details_page(part_id, parts_data):
             st.rerun()
         return
 
-    # Title
-    st.title(f"📋 {part_data['name']}")
+    # Title with buttons
+    title_col, btn_col1, btn_col2 = st.columns([3, 1, 1])
+    with title_col:
+        st.title(f"📋 {part_data['name']}")
+    with btn_col1:
+        st.markdown("<br>", unsafe_allow_html=True)  # Add spacing
+        if st.button("📋 検査表作成", key="create_inspection_btn", use_container_width=True):
+            st.query_params["view"] = "inspection_form"
+            st.query_params["selected_part_id"] = part_id
+            st.rerun()
+    with btn_col2:
+        st.markdown("<br>", unsafe_allow_html=True)  # Add spacing
+        if st.button("✏️ 編集", key="edit_part_btn", type="primary", use_container_width=True):
+            st.query_params["view"] = "edit_part"
+            st.query_params["part_id"] = part_id
+            st.rerun()
     st.markdown("---")
 
     # 2列レイアウトで詳細表示
@@ -941,7 +991,7 @@ def show_add_part_page(parts_data):
                 st.rerun()
 
 
-def show_inspection_form_page(parts_data):
+def show_inspection_form_page(parts_data, preselected_part_id=None):
     """Display inspection form page"""
     st.title("📋 検査表入力")
     st.markdown("---")
@@ -960,8 +1010,17 @@ def show_inspection_form_page(parts_data):
         part_options = ["選択してください"] + [
             f"{p['id']} - {p['name']}" for p in parts_data
         ]
+
+        # 事前に選択された部品がある場合、そのインデックスを見つける
+        default_index = 0
+        if preselected_part_id:
+            for idx, option in enumerate(part_options):
+                if option.startswith(f"{preselected_part_id} -"):
+                    default_index = idx
+                    break
+
         selected_part_for_inspection = st.selectbox(
-            "対象部品", part_options
+            "対象部品", part_options, index=default_index
         )
 
     # 選択された部品の情報を取得
@@ -1178,6 +1237,171 @@ def show_inspection_form_page(parts_data):
         )
 
 
+def show_edit_part_page(part_id, parts_data):
+    """Display edit part page"""
+    # Find the selected part
+    part_data = next((p for p in parts_data if p["id"] == part_id), None)
+
+    if not part_data:
+        st.error(f"部品ID '{part_id}' が見つかりません。")
+        if st.button("ホームに戻る"):
+            st.query_params.clear()
+            st.rerun()
+        return
+
+    st.title(f"✏️ 部品編集: {part_data['name']}")
+    st.markdown("---")
+
+    # 編集フォーム
+    with st.form("edit_part_form"):
+        col1, col2 = st.columns(2)
+
+        with col1:
+            edit_id = st.text_input(
+                "部品ID *",
+                value=part_data["id"],
+                disabled=True,
+                help="部品IDは変更できません"
+            )
+            edit_name = st.text_input(
+                "部品名 *",
+                value=part_data["name"],
+                placeholder="例: 六角ボルト M12"
+            )
+            edit_category = st.text_input(
+                "カテゴリ *",
+                value=part_data["category"],
+                placeholder="例: 締結部品"
+            )
+            edit_storage = st.text_input(
+                "保管場所 *",
+                value=part_data["storage"],
+                placeholder="例: A棟-1F-棚番号A-15"
+            )
+
+        with col2:
+            edit_inspection = st.text_area(
+                "検査項目 *（1行に1項目）",
+                value="\n".join(part_data.get("inspection_items", [])),
+                placeholder="ねじ山の損傷確認\n頭部の変形確認\n表面の錆確認",
+                height=100
+            )
+            edit_cautions = st.text_area(
+                "注意点（1行に1項目）",
+                value="\n".join(part_data.get("cautions", [])),
+                placeholder="トルク管理が重要\n再使用回数に注意",
+                height=100
+            )
+            edit_image_desc = st.text_input(
+                "検査箇所イメージの説明",
+                value=part_data.get("image_description", ""),
+                placeholder="例: ボルト頭部・ねじ山部の検査ポイント"
+            )
+
+            # 必須製品の現在の値を整形
+            current_products = []
+            for product in part_data.get("required_products", []):
+                product_line = f"{product['product_id']}|{product['product_name']}"
+                if product.get('notes'):
+                    product_line += f"|{product['notes']}"
+                current_products.append(product_line)
+
+            edit_required_products = st.text_area(
+                "必須製品（任意、1行に1製品）",
+                value="\n".join(current_products),
+                placeholder="TUA60|TUA60 アセンブリ|主軸固定用\nTUA70|TUA70 ユニット|予備用",
+                height=80,
+                help="形式: 製品ID|製品名|用途（パイプ区切り）"
+            )
+
+        # 現在の画像を表示
+        st.markdown("#### 現在の画像")
+        image_path = get_image_path(part_data)
+        if image_path:
+            col_img1, col_img2 = st.columns([1, 2])
+            with col_img1:
+                st.image(image_path, caption="現在の画像", width=200)
+            with col_img2:
+                st.info("新しい画像をアップロードすると、現在の画像が置き換えられます。")
+        else:
+            st.info("現在、画像は登録されていません。")
+
+        # 画像アップロード
+        uploaded_image = st.file_uploader(
+            "新しい検査箇所の画像（任意）",
+            type=["png", "jpg", "jpeg"],
+            help="PNG, JPG, JPEG形式の画像をアップロードできます"
+        )
+
+        # フォームボタン
+        col_btn1, col_btn2 = st.columns(2)
+        with col_btn1:
+            submitted = st.form_submit_button("💾 更新", width="stretch", type="primary")
+        with col_btn2:
+            cancel = st.form_submit_button("❌ キャンセル", width="stretch")
+
+        if cancel:
+            # 部品詳細ページに戻る
+            st.query_params["view"] = "part_details"
+            st.query_params["part_id"] = part_id
+            st.rerun()
+
+        if submitted:
+            # バリデーション
+            if not edit_name or not edit_category or not edit_storage:
+                st.error("必須項目（*）を入力してください。")
+            elif not edit_inspection.strip():
+                st.error("検査項目を1つ以上入力してください。")
+            else:
+                # 必須製品のパース
+                required_products = []
+                if edit_required_products.strip():
+                    for line in edit_required_products.split("\n"):
+                        if line.strip():
+                            parts_info = [p.strip() for p in line.split("|")]
+                            if len(parts_info) >= 2:
+                                product = {
+                                    "product_id": parts_info[0],
+                                    "product_name": parts_info[1],
+                                    "notes": (
+                                        parts_info[2]
+                                        if len(parts_info) >= 3
+                                        else ""
+                                    )
+                                }
+                                required_products.append(product)
+
+                # 更新データを作成
+                updated_part = {
+                    "id": edit_id,
+                    "name": edit_name,
+                    "category": edit_category,
+                    "inspection_items": [
+                        item.strip() for item in edit_inspection.split("\n")
+                        if item.strip()
+                    ],
+                    "cautions": [
+                        item.strip() for item in edit_cautions.split("\n")
+                        if item.strip()
+                    ] if edit_cautions.strip() else ["特になし"],
+                    "storage": edit_storage,
+                    "image_description": (
+                        edit_image_desc if edit_image_desc else "検査箇所"
+                    ),
+                    "required_products": required_products
+                }
+
+                # JSONに保存（画像も含む）
+                if update_part(part_id, updated_part, uploaded_image):
+                    st.success(f"部品 '{edit_name}' を更新しました！")
+                    # 部品詳細ページに自動的に戻る
+                    st.query_params["view"] = "part_details"
+                    st.query_params["part_id"] = part_id
+                    st.rerun()
+                else:
+                    st.error("部品の更新に失敗しました。")
+
+
 # ============================================================
 # Main Routing Logic
 # ============================================================
@@ -1185,6 +1409,8 @@ def show_inspection_form_page(parts_data):
 # Check which view to show based on query parameters
 if current_view == "part_details" and selected_part_id_from_url:
     show_part_details_page(selected_part_id_from_url, parts_data)
+elif current_view == "edit_part" and selected_part_id_from_url:
+    show_edit_part_page(selected_part_id_from_url, parts_data)
 elif current_view == "product_details" and selected_product_id_from_url:
     # Extract product name from the product ID
     product_name = None
@@ -1210,7 +1436,7 @@ elif current_view == "product_details" and selected_product_id_from_url:
 elif current_view == "add_part":
     show_add_part_page(parts_data)
 elif current_view == "inspection_form":
-    show_inspection_form_page(parts_data)
+    show_inspection_form_page(parts_data, preselected_part_id_for_inspection)
 else:
     # Show main page
     # メインエリア
