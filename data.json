@@ -171,19 +171,6934 @@
       "required_products": []
     },
     {
-      "id": "TUA60-04203-5A0",
-      "name": "シャフトA",
-      "category": "締結部品",
+      "id": "TUA60-E28-00002-500",
+      "name": "ﾎﾙﾀﾞｰ固定軸(TUA60-E28)EG-ZN-C",
+      "category": "未設定",
+      "item_type": "45TUA6000002500E28",
       "inspection_items": [
-        "test"
+        "未設定"
       ],
       "cautions": [
-        "特になし"
+        "未設定"
       ],
-      "storage": "test",
+      "storage": "未設定",
       "image_description": "検査箇所",
       "image_file": null,
-      "required_products": []
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-04203-5A0",
+      "name": "ｼｬﾌﾄA(TUA60)",
+      "category": "未設定",
+      "item_type": "45TUA60042035A0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-04303-4A1",
+      "name": "ﾎﾙﾀﾞｰｱｰﾑ取付板(TUA60)EG-ZN-C付",
+      "category": "未設定",
+      "item_type": "45TUA60043034A1",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-04503-5C0",
+      "name": "ｼｬﾌﾄC(TUA60)",
+      "category": "未設定",
+      "item_type": "45TUA60045035C0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-04732-501",
+      "name": "SPﾘﾝｸ(TUA60)",
+      "category": "未設定",
+      "item_type": "45TUA6004732501",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-10202-5A0",
+      "name": "ﾕﾆｯﾄ ﾄﾞｱ補強板(TUA60)",
+      "category": "未設定",
+      "item_type": "45TUA60102025A0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-10203-5B0",
+      "name": "蝶番(TUA60)三価ﾕﾆｸﾛ鍍金",
+      "category": "未設定",
+      "item_type": "45TUA60102035B0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-10210-5A1",
+      "name": "蝶番ﾎﾙﾀﾞｰ(TUA60)",
+      "category": "未設定",
+      "item_type": "45TUA60102105A1",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-11101-4D0",
+      "name": "ｲﾝﾅｰﾌﾚｰﾑASSY(TUA60)",
+      "category": "未設定",
+      "item_type": "45TUA60111014D0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-11103-5B0",
+      "name": "ｲﾝﾅｰﾌﾚｰﾑ柱 2(TUA60)",
+      "category": "未設定",
+      "item_type": "45TUA60111035B0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-11110-5B1",
+      "name": "ｲﾝﾅｰﾌﾚｰﾑ板 1(TUA60)",
+      "category": "未設定",
+      "item_type": "45TUA60111105B1",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-S4-11118-400",
+      "name": "ｲﾝﾅｰﾌﾚｰﾑASSY(TUA60-S4)",
+      "category": "未設定",
+      "item_type": "45TUA6011118400S04",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-S30-11129-400",
+      "name": "ｲﾝﾅｰﾌﾚｰﾑASSY(TUA60-S30)",
+      "category": "未設定",
+      "item_type": "45TUA6011129500S30",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-11202-5C0",
+      "name": "ﾍﾞｰｽﾝ ｶﾞｲﾄﾞﾎﾟｽﾄ(TUA60)",
+      "category": "未設定",
+      "item_type": "45TUA60112025C0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-11302-5A0",
+      "name": "動作ｽｲｯﾁ固定板(TUA60)",
+      "category": "未設定",
+      "item_type": "45TUA60113025A0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-11311-500",
+      "name": "ﾍﾞｰｽﾝﾌｫﾄｲﾝﾀﾗﾌﾟﾀ中継板(TUA60)",
+      "category": "未設定",
+      "item_type": "45TUA6011311500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-12308-501",
+      "name": "ｳｫｰﾏﾌﾞﾗｹｯﾄ(TUA60)",
+      "category": "未設定",
+      "item_type": "45TUA6012308501",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-12309-501",
+      "name": "ｳｫｰﾏｶﾊﾞｰ(TUA60)",
+      "category": "未設定",
+      "item_type": "45TUA6012309501",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-14113-5A0",
+      "name": "ﾍﾞｰｽﾝﾍﾞｰｽ 上(TUA60)",
+      "category": "未設定",
+      "item_type": "45TUA60141135A0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-14114-5A0",
+      "name": "ﾍﾞｰｽﾝﾍﾞｰｽ 下(TUA60)",
+      "category": "未設定",
+      "item_type": "45TUA60141145A0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-14432-501",
+      "name": "鉢洗いﾊﾟｲﾌﾟ ﾎﾙﾀﾞｰ(TUA60)",
+      "category": "未設定",
+      "item_type": "45TUA6014432501",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-14601-5A1",
+      "name": "ﾍﾞｰｽﾝ回転軸(TUA60)",
+      "category": "未設定",
+      "item_type": "45TUA60146015A1",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-14608-5B0",
+      "name": "ﾍﾞｰｽﾝ ｼｬﾌﾄﾅｯﾄ(TUA60)",
+      "category": "未設定",
+      "item_type": "45TUA60146085B0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-15002-5C0",
+      "name": "PCB ﾎﾙﾀﾞｰ(TUA60)",
+      "category": "未設定",
+      "item_type": "45TUA60150025C0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-17006-4B0",
+      "name": "VCﾀﾝｸﾎﾙﾀﾞｰ ASSY(TUA60)",
+      "category": "未設定",
+      "item_type": "45TUA60170064B0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-S6-18005-4A0",
+      "name": "ｽﾋﾟｯﾄﾝﾊﾞﾙﾌﾞﾎﾙﾀﾞｰ ASSY(TUA60-S6)",
+      "category": "未設定",
+      "item_type": "45TUA60180054A0S06",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-S3-18005-4A0",
+      "name": "AVCﾎﾙﾀﾞｰ ASSY(TUA60-S3)EG-ZN-C付",
+      "category": "未設定",
+      "item_type": "45TUA60180054A0S3",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-19005-4A0",
+      "name": "VCﾀﾝｸﾎﾙﾀﾞｰ ASSY(ｾﾝﾄﾗﾙ)(TUA60)",
+      "category": "未設定",
+      "item_type": "45TUA60190054A0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-26303-400",
+      "name": "ﾕﾆｯﾄ運搬棒ASSY(TUA60)",
+      "category": "未設定",
+      "item_type": "45TUA6026303400",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-26321-500",
+      "name": "ﾃｰﾌﾞﾙﾎﾙﾀﾞｰ連結板(TUA60)",
+      "category": "未設定",
+      "item_type": "45TUA6026321500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-31321-501",
+      "name": "TUGｳｴｲﾄ(TUA60)",
+      "category": "未設定",
+      "item_type": "45TUA6031321501",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-31705-500",
+      "name": "SPﾜｯｼｬｰ(TUA60)",
+      "category": "未設定",
+      "item_type": "45TUA6031705500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-32701-5A0",
+      "name": "SPｼｬﾌﾄA(TUA60)",
+      "category": "未設定",
+      "item_type": "45TUA60327015A0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-32702-5A0",
+      "name": "SPｼｬﾌﾄB(TUA60)",
+      "category": "未設定",
+      "item_type": "45TUA60327025A0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-32708-5A0",
+      "name": "SPｱｼﾞｬｽﾀｰ(TUA60)",
+      "category": "未設定",
+      "item_type": "45TUA60327085A0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-32715-5A0",
+      "name": "ﾌﾞﾚｰｷ板(TUA60)",
+      "category": "未設定",
+      "item_type": "45TUA60327155A0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-32717-5A0",
+      "name": "ﾌﾞﾚｰｷﾎﾞﾙﾄ(TUA60)",
+      "category": "未設定",
+      "item_type": "45TUA60327175A0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-33201-500",
+      "name": "ﾎﾟｰﾙ(TUA60)",
+      "category": "未設定",
+      "item_type": "45TUA6033201500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-33301-500",
+      "name": "ｼｬﾌﾄ(TUA60)",
+      "category": "未設定",
+      "item_type": "45TUA6033301500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-34302-5B0",
+      "name": "ﾎﾙﾀﾞｰ補強板(TUA60)EG-ZN-C付",
+      "category": "未設定",
+      "item_type": "45TUA60343025B0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-41201-4B1",
+      "name": "ﾃｰﾌﾞﾙﾌﾚｰﾑASSY(TUA60)",
+      "category": "未設定",
+      "item_type": "45TUA60412014B1",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-41202-5B0",
+      "name": "ﾃｰﾌﾞﾙｾﾝﾀｰ(TUA60)",
+      "category": "未設定",
+      "item_type": "45TUA60412025B0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-S10-41208-400",
+      "name": "ﾃｰﾌﾞﾙﾌﾚｰﾑASSY(TUA60-S10)EG-ZN-C",
+      "category": "未設定",
+      "item_type": "45TUA6041208400S10",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-41209-5A0",
+      "name": "ﾃｰﾌﾞﾙ連結板(TUA60)",
+      "category": "未設定",
+      "item_type": "45TUA60412095A0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-S23-41224-400",
+      "name": "ﾃｰﾌﾞﾙﾌﾚｰﾑASSY(TUA60-S23)EG-ZN-C付",
+      "category": "未設定",
+      "item_type": "45TUA6041224400S23",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-S23-41225-500",
+      "name": "ﾃｰﾌﾞﾙｾﾝﾀｰ(TUA60-S23)EG-ZN-C付",
+      "category": "未設定",
+      "item_type": "45TUA6041225500S23",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-S17-41229-400",
+      "name": "ﾃｰﾌﾞﾙﾌﾚｰﾑASSY+VIS･VL(TUA60-S17)",
+      "category": "未設定",
+      "item_type": "45TUA6041229400S17",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-S31-41229-400",
+      "name": "ﾃｰﾌﾞﾙﾌﾚｰﾑASSY+VL･GBA(TUA60-S31)",
+      "category": "未設定",
+      "item_type": "45TUA6041229400S31",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-41305-5A0",
+      "name": "SWｹｰｽ取付板L(TUA60)",
+      "category": "未設定",
+      "item_type": "45TUA60413055A0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-41306-5A0",
+      "name": "SWｹｰｽ取付板R(TUA60)",
+      "category": "未設定",
+      "item_type": "45TUA60413065A0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-46001-501",
+      "name": "ﾓﾆﾀｰｳｪｲﾄ(TUA60)",
+      "category": "未設定",
+      "item_type": "45TUA6046001501",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-46004-501",
+      "name": "TUGｳｪｲﾄ2(TUA60)",
+      "category": "未設定",
+      "item_type": "45TUA6046004501",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-S3-60104-500",
+      "name": "ﾋﾟｯﾄﾌﾚｰﾑ(TUA60-S3)EG-ZN-C付",
+      "category": "未設定",
+      "item_type": "45TUA6060104500S3",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-60118-500",
+      "name": "安全ｽｲｯﾁ作動板A(TUA60)",
+      "category": "未設定",
+      "item_type": "45TUA6060118500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-60119-5A0",
+      "name": "安全ｽｲｯﾁ作動板B(TUA60)",
+      "category": "未設定",
+      "item_type": "45TUA60601195A0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-S35-60148-501",
+      "name": "安全ｽｲｯﾁ作動板A(TUA60-S35)EG-ZN-C付",
+      "category": "未設定",
+      "item_type": "45TUA6060148501S35",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-S35-60151-500",
+      "name": "ﾋﾟｯﾄﾌﾚｰﾑ2(TUA60-S35)",
+      "category": "未設定",
+      "item_type": "45TUA6060151500S35",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-60160-500",
+      "name": "ﾋﾟｯﾄﾌﾚｰﾑ1(TUA60)",
+      "category": "未設定",
+      "item_type": "45TUA6060160500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-60161-500",
+      "name": "ﾋﾟｯﾄﾌﾚｰﾑ2(TUA60)",
+      "category": "未設定",
+      "item_type": "45TUA6060161500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-60162-500",
+      "name": "ﾋﾟｯﾄﾌﾚｰﾑ3(TUA60)",
+      "category": "未設定",
+      "item_type": "45TUA6060162500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-60164-501",
+      "name": "安全ｽｲｯﾁ作動板C(TUA60)",
+      "category": "未設定",
+      "item_type": "45TUA6060164501",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-60165-500",
+      "name": "安全ｽｲｯﾁ作動板D(TUA60)",
+      "category": "未設定",
+      "item_type": "45TUA6060165500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-S2-60168-500",
+      "name": "別置きﾋﾟｯﾄﾌﾚｰﾑ2(TUA60-S2)",
+      "category": "未設定",
+      "item_type": "45TUA6060168500S2",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-60303-5A0",
+      "name": "ﾒｲﾝSW取付板(TUA60)",
+      "category": "未設定",
+      "item_type": "45TUA60603035A0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-60316-5A1",
+      "name": "防水板(TUA60)",
+      "category": "未設定",
+      "item_type": "45TUA60603165A1",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-60317-5A1",
+      "name": "端末板(TUA60)",
+      "category": "未設定",
+      "item_type": "45TUA60603175A1",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-64302-5A0",
+      "name": "ｴｱｰ減圧弁取付板(TUA60)",
+      "category": "未設定",
+      "item_type": "45TUA60643025A0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA20",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-68504-5A0",
+      "name": "除菌ｶｰﾄﾘｯｼﾞ固定板W(TUA60)",
+      "category": "未設定",
+      "item_type": "45TUA60685045A0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-68508-5A0",
+      "name": "除菌ｶｰﾄﾘｯｼﾞ取付板A(TUA60)",
+      "category": "未設定",
+      "item_type": "45TUA60685085A0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-92122-502",
+      "name": "ﾍｯﾄﾞﾚｽﾄ取付板(TUA60)",
+      "category": "未設定",
+      "item_type": "45TUA6092122502",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-96102-4B1",
+      "name": "ｱｰﾑﾚｽﾄ芯材(DH)ASSY(TUA60)EG-ZN-C付",
+      "category": "未設定",
+      "item_type": "45TUA60961024B1",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-96202-4B1",
+      "name": "ｱｰﾑﾚｽﾄ芯材(Dr)ASSY(TUA60)EG-ZN-C付",
+      "category": "未設定",
+      "item_type": "45TUA60962024B1",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-97401-4F0",
+      "name": "ﾊﾞｯｸﾚｽﾄﾌﾚｰﾑASSY(TUA60)EG-ZN-C付",
+      "category": "未設定",
+      "item_type": "45TUA60974014F0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-S27-97428-400",
+      "name": "ﾊﾞｯｸﾚｽﾄﾌﾚｰﾑASSY(TUA60)EG-ZN-C付",
+      "category": "未設定",
+      "item_type": "45TUA6097428400S27",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-S43-97429-4A0",
+      "name": "ﾊﾞｯｸﾚｽﾄﾌﾚｰﾑASSY(TUA60-S43)",
+      "category": "未設定",
+      "item_type": "45TUA60974294A0S43",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-97501-4F0",
+      "name": "ﾊﾞｯｸﾚｽﾄﾌﾚｰﾑASSY(昇降)(TUA60)EG-ZN-C",
+      "category": "未設定",
+      "item_type": "45TUA60975014F0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-S27-97502-400",
+      "name": "ﾊﾞｯｸﾚｽﾄﾌﾚｰﾑASSY(昇降)(TUA60)EG-ZN-C付",
+      "category": "未設定",
+      "item_type": "45TUA6097502400S27",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "[ﾊﾞﾙｸ]TU97 3450-3",
+      "name": "ﾎﾙﾀﾞｰ固定軸(TU97)",
+      "category": "未設定",
+      "item_type": "452565345003",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "[ﾊﾞﾙｸ]TU97 3450",
+          "product_name": "TU97N",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-04337-500",
+      "name": "DHｱｰﾑﾍﾞｰｽ(TUA60)EG-ZN-C付",
+      "category": "未設定",
+      "item_type": "45TUA6004337500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-E71-00001-500",
+      "name": "ﾎﾙﾀﾞｰ押え板(TUA60-E71)",
+      "category": "未設定",
+      "item_type": "45TUA6000001500E71",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-11118-500",
+      "name": "板金ｽﾍﾟｰｻｰ",
+      "category": "未設定",
+      "item_type": "45TUA6011118500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "TUA60",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA60-14602-5B1",
+      "name": "ベースン回転軸 OP電動ベースン",
+      "category": "未設定",
+      "item_type": "45TUA60146025B1",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA60",
+          "product_name": "学校関係",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA40-14119-5A1",
+      "name": "ﾍﾞｰｽﾝﾍﾞｰｽ (固定)(TUA40)EG-ZN-C付",
+      "category": "未設定",
+      "item_type": "45TUA40141195A1",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA40",
+          "product_name": "TUA40",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA40-14122-5A0",
+      "name": "ﾍﾞｰｽﾝﾍﾞｰｽ 横(TUA40)EG-ZN-C付",
+      "category": "未設定",
+      "item_type": "45TUA40141225A0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA40",
+          "product_name": "TUA40",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA40-15002-501",
+      "name": "PCB ﾎﾙﾀﾞｰ(TUA40)",
+      "category": "未設定",
+      "item_type": "45TUA4015002501",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA40",
+          "product_name": "TUA40",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA40-S16-41229-400",
+      "name": "ﾃｰﾌﾞﾙﾌﾚｰﾑASSY+VL･GBA(TUA40-S16)",
+      "category": "未設定",
+      "item_type": "45TUA4041229400S16",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA40",
+          "product_name": "TUA40",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA40-97401-4B0",
+      "name": "ﾊﾞｯｸﾚｽﾄﾌﾚｰﾑASSY(TUA40) EG-ZN-C",
+      "category": "未設定",
+      "item_type": "45TUA40974014B0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA40",
+          "product_name": "TUA40",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA40-97410-501",
+      "name": "ﾘﾌﾀｰｼﾞｮｲﾝﾄ(TUA40)EG-ZN-C付",
+      "category": "未設定",
+      "item_type": "45TUA4097410501",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA40",
+          "product_name": "TUA40",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA40-S9-97429-4A0",
+      "name": "ﾊﾞｯｸﾚｽﾄﾌﾚｰﾑASSY(TUA40-S9)EG-ZN-C",
+      "category": "未設定",
+      "item_type": "45TUA40974294A0S9",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA40",
+          "product_name": "TUA40",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA40-S18-32735-500",
+      "name": "ﾌﾞﾚｰｷ板(TUA40-S18)",
+      "category": "未設定",
+      "item_type": "45TUA4032735500S18",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA40",
+          "product_name": "TUA40",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA40-E15-17029-400",
+      "name": "VCﾀﾝｸﾎﾙﾀﾞｰ ASSY(TUA40-E15)",
+      "category": "未設定",
+      "item_type": "45TUA4017029400E15",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA40",
+          "product_name": "TUA40",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA70-11101-4B0",
+      "name": "ｲﾝﾅｰﾌﾚｰﾑASSY(TUA70)",
+      "category": "未設定",
+      "item_type": "45TUA70111014B0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA70",
+          "product_name": "TUA70",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA70-S4-11113-400",
+      "name": "ｲﾝﾅｰﾌﾚｰﾑASSY(TUA70-S4)EG-ZN-C付",
+      "category": "未設定",
+      "item_type": "45TUA7011113400S4",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA70",
+          "product_name": "TUA70",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA70-S6-11113-400",
+      "name": "ｲﾝﾅｰﾌﾚｰﾑASSY(TUA70-S6)",
+      "category": "未設定",
+      "item_type": "45TUA7011113400S6",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA70",
+          "product_name": "TUA70",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA70-S14-11115-400",
+      "name": "ｲﾝﾅｰﾌﾚｰﾑASSY(TUA70-S14)EG-ZN-C付",
+      "category": "未設定",
+      "item_type": "45TUA7011115400S14",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA70",
+          "product_name": "TUA70",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA70-11201-500",
+      "name": "ﾍﾞｰｽﾝ固定片(TUA70)",
+      "category": "未設定",
+      "item_type": "45TUA7011201500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA70",
+          "product_name": "TUA70",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA70-11209-5A0",
+      "name": "ﾍﾞｰｽﾝ固定板(TUA70)",
+      "category": "未設定",
+      "item_type": "45TUA70112095A0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA70",
+          "product_name": "TUA70",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA70-11601-4B0",
+      "name": "ﾕﾆｯﾄﾍﾞｰｽASSY(TUA70)",
+      "category": "未設定",
+      "item_type": "45TUA70116014B0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA70",
+          "product_name": "TUA70",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA70-11610-500",
+      "name": "ﾁｪｱ連結板(TUA70)",
+      "category": "未設定",
+      "item_type": "45TUA7011610500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA70",
+          "product_name": "TUA70",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA70-S4-66023-500",
+      "name": "シャットオフバルブ取付板(TUA70-S4)",
+      "category": "未設定",
+      "item_type": "45TUA7066023500S4",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA70",
+          "product_name": "TUA70",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA70-S4-60120-500",
+      "name": "センターピットフレームカバー(TUA70-S4)",
+      "category": "未設定",
+      "item_type": "45TUA7060120500S4",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA70",
+          "product_name": "TUA70",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA20-01107-4A0",
+      "name": "ﾎﾞﾃﾞｨｰｻﾎﾟｰﾄASSY(TUA20)EG-ZN-C付",
+      "category": "未設定",
+      "item_type": "45TUA20011074A0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA20",
+          "product_name": "TUA20",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA20-03107-5C0",
+      "name": "DHﾌﾚｰﾑ(TUA20)EG-ZN-C付",
+      "category": "未設定",
+      "item_type": "45TUA20031075C0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA20",
+          "product_name": "TUA20",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA20-11110-500",
+      "name": "ｲﾝﾅｰﾌﾚｰﾑ板 1(TUA20)EG-ZN-C付",
+      "category": "未設定",
+      "item_type": "45TUA2011110500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA20",
+          "product_name": "TUA20",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA20-11428-5A0",
+      "name": "ﾕﾆｯﾄﾌﾛﾝﾄ 板 E(TUA20)EG-ZN-C付",
+      "category": "未設定",
+      "item_type": "45TUA20114285A0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA20",
+          "product_name": "TUA20",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA20-15003-500",
+      "name": "PCB ﾎﾙﾀﾞｰ(TUA20)EG-ZN-C付",
+      "category": "未設定",
+      "item_type": "45TUA2015003500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA20",
+          "product_name": "TUA20",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA20-26313-400",
+      "name": "運搬棒F ASSY(国内)(TUA20)",
+      "category": "未設定",
+      "item_type": "45TUA2026313400",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA20",
+          "product_name": "TUA20",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA20-31605-500",
+      "name": "▲ﾁｬﾝﾈﾙﾘﾝｸ(TUA20)",
+      "category": "未設定",
+      "item_type": "45TUA2031605500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA20",
+          "product_name": "TUA20",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA20-31707-500",
+      "name": "ｽﾌﾟﾘﾝｸﾞｱｼﾞｬｽﾀｰ(TUA20)",
+      "category": "未設定",
+      "item_type": "45TUA2031707500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA20",
+          "product_name": "TUA20",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA20-41205-4A0",
+      "name": "ﾃｰﾌﾞﾙｾﾝﾀｰ ASSY(TUA20)EG-ZN-C付",
+      "category": "未設定",
+      "item_type": "45TUA20412054A0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA20",
+          "product_name": "TUA20",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA20-41206-5A2",
+      "name": "ﾃｰﾌﾞﾙ連結板(TUA20)EG-ZN-C付",
+      "category": "未設定",
+      "item_type": "45TUA20412065A2",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA20",
+          "product_name": "TUA20",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA20-41208-5B0",
+      "name": "ﾃｰﾌﾞﾙﾌﾚｰﾑL(TUA20)EG-ZN-C付",
+      "category": "未設定",
+      "item_type": "45TUA20412085B0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA20",
+          "product_name": "TUA20",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA20-41209-5B0",
+      "name": "ﾃｰﾌﾞﾙﾌﾚｰﾑR(TUA20)EG-ZN-C付",
+      "category": "未設定",
+      "item_type": "45TUA20412095B0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA20",
+          "product_name": "TUA20",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA20-46004-500",
+      "name": "ﾓﾆﾀｰｳｪｲﾄ(TAB)(TUA20)EG-ZN-C付",
+      "category": "未設定",
+      "item_type": "45TUA2046004500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA20",
+          "product_name": "TUA20",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA20-60103-5C0",
+      "name": "ﾋﾟｯﾄﾌﾚｰﾑ(ﾕﾆｯﾄ下)(TUA20)",
+      "category": "未設定",
+      "item_type": "45TUA20601035C0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA20",
+          "product_name": "TUA20",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA20-60104-5C0",
+      "name": "ﾋﾟｯﾄﾌﾚｰﾑ(ﾕﾆｯﾄ下)2 (TUA20)",
+      "category": "未設定",
+      "item_type": "45TUA20601045C0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA20",
+          "product_name": "TUA20",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA20-60111-5A1",
+      "name": "ﾋﾟｯﾄ固定板 (TUA20)",
+      "category": "未設定",
+      "item_type": "45TUA20601115A1",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA20",
+          "product_name": "TUA20",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA20-69103-500",
+      "name": "ﾋﾟｯﾄ固定板(別置)(TUA20)",
+      "category": "未設定",
+      "item_type": "45TUA2069103500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA20",
+          "product_name": "TUA20",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA20-82313-5A0",
+      "name": "安全ｽｲｯﾁﾍﾞｰｽ(TUA20)EG-ZN-C付",
+      "category": "未設定",
+      "item_type": "45TUA20823135A0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA20",
+          "product_name": "TUA20",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA20-92101-4A1",
+      "name": "ｽﾗｲﾄﾞﾊﾞｰASSY(TUA20)EG-ZN-C付",
+      "category": "未設定",
+      "item_type": "45TUA20921014A1",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA20",
+          "product_name": "TUA20",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA20-85302-500",
+      "name": "ｸﾗﾝｸ(TUA20)EG-ZN-C付",
+      "category": "未設定",
+      "item_type": "45TUA2085302500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA20",
+          "product_name": "TUA20",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA20-10206-5A0",
+      "name": "ﾕﾆｯﾄ ﾄﾞｱ補強板2(TUA20)",
+      "category": "未設定",
+      "item_type": "45TUA20102065A0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA20",
+          "product_name": "TUA20",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA20-19009-500",
+      "name": "VCﾀﾝｸﾎﾙﾀﾞｰ右(TUA20)",
+      "category": "未設定",
+      "item_type": "45TUA2019009500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA20",
+          "product_name": "TUA20",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA20-11416-501",
+      "name": "ﾕﾆｯﾄﾌﾛﾝﾄ 上板(TUA20) EG-ZN-C付",
+      "category": "未設定",
+      "item_type": "45TUA2011416501",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA20",
+          "product_name": "TUA20",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA20-63215-500",
+      "name": "電磁弁取付板(TUA20)EG-ZN-C付",
+      "category": "未設定",
+      "item_type": "45TUA2063215500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA20",
+          "product_name": "TUA20",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA20-10208-500",
+      "name": "ﾏｸﾞﾈｯﾄｷｰﾊﾟｰ2(TUA20)EG-ZN-C付",
+      "category": "未設定",
+      "item_type": "45TUA2010208500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA20",
+          "product_name": "TUA20",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA20-85304-400",
+      "name": "ﾘﾌﾀｰﾘﾝｸ R ASSY(TUA20)EG-ZN-C付",
+      "category": "未設定",
+      "item_type": "45TUA2085304400",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA20",
+          "product_name": "TUA20",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA20-85305-400",
+      "name": "ﾘﾌﾀｰﾘﾝｸ L ASSY(TUA20)EG-ZN-C付",
+      "category": "未設定",
+      "item_type": "45TUA2085305400",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA20",
+          "product_name": "TUA20",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA20-26321-501",
+      "name": "荷造りﾊﾞﾝﾄﾞ(TUA20)",
+      "category": "未設定",
+      "item_type": "45TUA2026321501",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA20",
+          "product_name": "TUA20",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA20-97409-500",
+      "name": "ﾘﾌﾀｰｼﾞｮｲﾝﾄL(TUA20)EG-ZN-C付",
+      "category": "未設定",
+      "item_type": "45TUA2097409500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA20",
+          "product_name": "TUA20",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA20-97410-500",
+      "name": "ﾘﾌﾀｰｼﾞｮｲﾝﾄR(TUA20)EG-ZN-C付",
+      "category": "未設定",
+      "item_type": "45TUA2097410500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA20",
+          "product_name": "TUA20",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA20-S1-64502-500",
+      "name": "SV取付板(AVC)TUA20",
+      "category": "未設定",
+      "item_type": "45TUA2064502500S1",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA20",
+          "product_name": "TUA20",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA20-S9-41235-5A0",
+      "name": "ﾃｰﾌﾞﾙﾌﾚｰﾑL（TUA20-S9）41235-500",
+      "category": "未設定",
+      "item_type": "45TUA20412355A0S9",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA20",
+          "product_name": "TUA20",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA20-S9-41230-400",
+      "name": "ﾃｰﾌﾞﾙｾﾝﾀｰ ASSY(TUA20-S9) 41230-400",
+      "category": "未設定",
+      "item_type": "45TUA2041230400S9",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA20",
+          "product_name": "TUA20",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA20-55103-500",
+      "name": "ﾃｰﾌﾞﾙ連結板(SM)(TUA20)EG-ZN-C",
+      "category": "未設定",
+      "item_type": "45TUA2055103500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA20",
+          "product_name": "TUA20",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA20-46006-500",
+      "name": "ｳｴｲﾄ1(SM)(TUA20)",
+      "category": "未設定",
+      "item_type": "45TUA2046006500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA20",
+          "product_name": "TUA20",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA20-46007-500",
+      "name": "ｳｴｲﾄ2(SM)(TUA20)",
+      "category": "未設定",
+      "item_type": "45TUA2046007500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA20",
+          "product_name": "TUA20",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU110-S7 0601",
+      "name": "基板取付板(TU110-S7)EG-ZN-C付",
+      "category": "未設定",
+      "item_type": "4524970601S7",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU110",
+          "product_name": "TU110",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU110+-S4-13006-500",
+      "name": "基板取付板(TU110+-S4)",
+      "category": "未設定",
+      "item_type": "45T110+1300650000S04",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU110+",
+          "product_name": "TU110",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU110-13007-500",
+      "name": "基板取付板(TU110+)",
+      "category": "未設定",
+      "item_type": "45T110+13007500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU110",
+          "product_name": "TU110",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU110+-S9-45008-500",
+      "name": "TUGｳｪｲﾄⅡ(TU110+-S9)",
+      "category": "未設定",
+      "item_type": "45T110+4500850000S09",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU110+",
+          "product_name": "TU110",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU110+-S9-45009-500",
+      "name": "TUGｳｪｲﾄⅢ(TU110+-S9)",
+      "category": "未設定",
+      "item_type": "45T110+4500950000S09",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU110+",
+          "product_name": "TU110",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU110+-94604-501",
+      "name": "ｽﾃｯﾌﾟﾌﾚｰﾑC(TU110+)",
+      "category": "未設定",
+      "item_type": "45T110+94604501",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU110+",
+          "product_name": "TU110",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU110-94621-5A0",
+      "name": "ｽﾃｯﾌﾟｶﾞｲﾄﾞﾚｰﾙB (TU110+)",
+      "category": "未設定",
+      "item_type": "45T110+946215A0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU110",
+          "product_name": "TU110",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU110+-94685-500",
+      "name": "ﾘﾆｱﾍﾞｱﾘﾝｸﾞ固定板(TU110+)",
+      "category": "未設定",
+      "item_type": "45T110+94685500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU110+",
+          "product_name": "TU110",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU110-S7 0224",
+      "name": "ｲﾝﾅｰﾌﾚｰﾑASSY(TU110-S7)",
+      "category": "未設定",
+      "item_type": "45TU110022400S7",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU110",
+          "product_name": "TU110",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU110-S7 0229",
+      "name": "ｱｼｽﾄﾌﾟﾚｰﾄ(TU110-S7)",
+      "category": "未設定",
+      "item_type": "45TU110022900S7",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU110",
+          "product_name": "TU110",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU110-02307-400",
+      "name": "ｲﾝﾅｰﾌﾚｰﾑASSY(TU110)",
+      "category": "未設定",
+      "item_type": "45TU11002307400",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU110",
+          "product_name": "TU110",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU110-02316-500",
+      "name": "ｶｯﾄﾌｨﾙﾀｰ取付板(TU110)",
+      "category": "未設定",
+      "item_type": "45TU11002316500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU110",
+          "product_name": "TU110",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU110-02320-500",
+      "name": "ｱｼｽﾄﾌﾟﾚｰﾄ(TU110)",
+      "category": "未設定",
+      "item_type": "45TU11002320500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU110",
+          "product_name": "TU110",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU110-S7 0802",
+      "name": "ｳｫｰﾏｰ取付板(TU110-S7)",
+      "category": "未設定",
+      "item_type": "45TU110080200S7",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU110",
+          "product_name": "TU110",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU110-08102-5A0",
+      "name": "ｳｫｰﾏｰ取付板(TU110)",
+      "category": "未設定",
+      "item_type": "45TU110081025A0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU110",
+          "product_name": "TU110",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU110-11021-500",
+      "name": "ﾄﾗｯﾌﾟｻﾎﾟｰﾄ(TU110)",
+      "category": "未設定",
+      "item_type": "45TU11011021500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU110",
+          "product_name": "TU110",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU110-14201-501",
+      "name": "ｼｬｯﾄｵﾌﾊﾞﾙﾌﾞ取付板(TU110)",
+      "category": "未設定",
+      "item_type": "45TU11014201501",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU110",
+          "product_name": "TU110",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU110-17231-4A0",
+      "name": "VCﾀﾝｸﾌﾚｰﾑ(TU110)",
+      "category": "未設定",
+      "item_type": "45TU110172314A0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU110",
+          "product_name": "TU110",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU110-18104-500",
+      "name": "AVCｱﾀｯﾁﾒﾝﾄ(TU110)",
+      "category": "未設定",
+      "item_type": "45TU11018104500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU110",
+          "product_name": "TU110",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU110-S5 4815",
+      "name": "SC/VL基板･LED基板取付板(TU110-S5)",
+      "category": "未設定",
+      "item_type": "45TU110481500S5",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU110",
+          "product_name": "TU110",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU110-60103-5A1",
+      "name": "ﾋﾟｯﾄﾌﾚｰﾑ(TU110)",
+      "category": "未設定",
+      "item_type": "45TU110601035A1",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU110",
+          "product_name": "TU110",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU110-64502-5A0",
+      "name": "SV取付板(TU110)",
+      "category": "未設定",
+      "item_type": "45TU110645025A0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU110",
+          "product_name": "TU110",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU110-67301-500",
+      "name": "ﾌｨﾙﾀｰ取付板(TU110)",
+      "category": "未設定",
+      "item_type": "45TU11067301500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU110",
+          "product_name": "TU110",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU110-86101-400",
+      "name": "ﾎﾞﾃﾞｨｰｻﾎﾟｰﾄASSY(TU110)",
+      "category": "未設定",
+      "item_type": "45TU11086101400",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU110",
+          "product_name": "TU110",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU110-92016-502",
+      "name": "ﾌﾗﾝｼﾞｼｬﾌﾄ(TU110)",
+      "category": "未設定",
+      "item_type": "45TU11092016502",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU110",
+          "product_name": "TU110",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU110-94029-500",
+      "name": "ｽﾃｯﾌﾟ軸(TU110)",
+      "category": "未設定",
+      "item_type": "45TU11094029500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU110",
+          "product_name": "TU110",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU110-97213-500",
+      "name": "ﾋﾝｼﾞ受け(TU110)",
+      "category": "未設定",
+      "item_type": "45TU11097213500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU110",
+          "product_name": "TU110",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU110-E25-00001-500",
+      "name": "ﾍﾞｰｽﾌﾟﾚｰﾄ(TU110-E25)",
+      "category": "未設定",
+      "item_type": "45TU11000001500E25",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU110",
+          "product_name": "TU110",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU201 A3215-1",
+      "name": "ﾘﾝｸ(TU201)",
+      "category": "未設定",
+      "item_type": "4525663215A1",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU201 A3215",
+          "product_name": "TU201",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU201 8501-3",
+      "name": "取付板(TU201)",
+      "category": "未設定",
+      "item_type": "452566850103",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU201 8501",
+          "product_name": "TU201",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU201 B1654",
+      "name": "除菌ｶｰﾄﾘｯｼﾞ固定板(TU201)",
+      "category": "未設定",
+      "item_type": "4525661654B0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU201 B1654",
+          "product_name": "TU201",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU201 A1658",
+      "name": "除菌ｶｰﾄﾘｯｼﾞ取付板(TU201)",
+      "category": "未設定",
+      "item_type": "4525661658A0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU201 A1658",
+          "product_name": "TU201",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU201 3225-1",
+      "name": "ﾌﾞﾚｰｷ板(TU201)EG-ZN-C付",
+      "category": "未設定",
+      "item_type": "452566322501",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU201 3225",
+          "product_name": "TU201",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU201 A3034-1",
+      "name": "ｽﾌﾟﾘﾝｸﾞｱｼﾞｬｽﾀｰ(TU201)",
+      "category": "未設定",
+      "item_type": "4525663034A1",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU201 A3034",
+          "product_name": "TU201",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU201 A3036",
+      "name": "ﾛｯｸﾎﾞﾃﾞｲ(TU201)",
+      "category": "未設定",
+      "item_type": "4525663036A0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU201 A3036",
+          "product_name": "TU201",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU201 A9310-1",
+      "name": "ｼﾘﾝﾀﾞｰﾈｼﾞEﾘﾝｸﾞ溝付(TU201)",
+      "category": "未設定",
+      "item_type": "4525669310A1",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU201 A9310",
+          "product_name": "TU201",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU101 A0116",
+      "name": "ﾎﾞﾃﾞｨｰｻﾎﾟｰﾄASSY(TU101)",
+      "category": "未設定",
+      "item_type": "4524940116A0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU101 A0116",
+          "product_name": "TU101/TU101N/TU1012",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU101 1414",
+      "name": "ｼｬｯﾄｵﾌﾊﾞﾙﾌﾞ取付板(TU101)",
+      "category": "未設定",
+      "item_type": "4524941414",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU101 1414",
+          "product_name": "TU101/TU101N/TU1012",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU101 1501",
+      "name": "ﾌｨﾙﾀｰ取付板(TU101)",
+      "category": "未設定",
+      "item_type": "4524941501",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU101 1501",
+          "product_name": "TU101/TU101N/TU1012",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU101 A1701",
+      "name": "VCﾀﾝｸ取付板(TU101)",
+      "category": "未設定",
+      "item_type": "4524941701",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU101 A1701",
+          "product_name": "TU101/TU101N/TU1012",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU101 1745-1",
+      "name": "ﾀﾝｸ取付板SUB(TU101)",
+      "category": "未設定",
+      "item_type": "452494174501",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU101 1745",
+          "product_name": "TU101/TU101N/TU1012",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU101 1757",
+      "name": "配管ｻﾎﾟｰﾄ(TU101)",
+      "category": "未設定",
+      "item_type": "4524941757",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU101 1757",
+          "product_name": "TU101/TU101N/TU1012",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU101 A1802",
+      "name": "AV取付板(TU101)",
+      "category": "未設定",
+      "item_type": "4524941802",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU101 A1802",
+          "product_name": "TU101/TU101N/TU1012",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU101 2550",
+      "name": "荷造りﾊﾞﾝﾄﾞ(TU101)",
+      "category": "未設定",
+      "item_type": "4524942550",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU101 2550",
+          "product_name": "TU101/TU101N/TU1012",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU101 3507",
+      "name": "ﾃｰﾌﾞﾙﾌﾚｰﾑB(TU101)",
+      "category": "未設定",
+      "item_type": "4524943507",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU101 3507",
+          "product_name": "TU101/TU101N/TU1012",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU101 3529-1",
+      "name": "FVｳｪｲﾄ(TU101)",
+      "category": "未設定",
+      "item_type": "452494352901",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU101 3529",
+          "product_name": "TU101/TU101N/TU1012",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU101 A3531-1",
+      "name": "TUGｳｪｲﾄⅠ(TU101)",
+      "category": "未設定",
+      "item_type": "4524943531A1",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU101 A3531",
+          "product_name": "TU101/TU101N/TU1012",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU101 A3532-2",
+      "name": "TUGｳｪｲﾄⅡ(TU101)",
+      "category": "未設定",
+      "item_type": "4524943532A2",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU101 A3532",
+          "product_name": "TU101/TU101N/TU1012",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU101 3533-2",
+      "name": "TUGｳｪｲﾄⅢ(TU101)",
+      "category": "未設定",
+      "item_type": "452494353302",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU101 3533",
+          "product_name": "TU101/TU101N/TU1012",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU101 4067",
+      "name": "LED基板取付板(TU101)",
+      "category": "未設定",
+      "item_type": "4524944067",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU101 4067",
+          "product_name": "TU101/TU101N/TU1012",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU101 4810",
+      "name": "SC/VL基板取付板(TU101)",
+      "category": "未設定",
+      "item_type": "4524944810",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU101 4810",
+          "product_name": "TU101/TU101N/TU1012",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU101-S9 6015-1",
+      "name": "ﾋﾟｯﾄﾌﾚｰﾑ(TU101-S9)",
+      "category": "未設定",
+      "item_type": "4524946015S9",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU101",
+          "product_name": "TU101/TU101N/TU1012",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU101 A6204",
+      "name": "ﾋｭｰｽﾞﾎﾞｯｸｽ(TU101)",
+      "category": "未設定",
+      "item_type": "4524946204A0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU101 A6204",
+          "product_name": "TU101/TU101N/TU1012",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU101 D6405",
+      "name": "ﾊﾞﾙﾌﾞ取付板(TU101)",
+      "category": "未設定",
+      "item_type": "4524946405D0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU101 D6405",
+          "product_name": "TU101/TU101N/TU1012",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU101 8024-1",
+      "name": "運搬棒R (国内)(TU101)EG-ZN-C付",
+      "category": "未設定",
+      "item_type": "452494802401",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU101 8024",
+          "product_name": "TU101/TU101N/TU1012",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU101 8031-1",
+      "name": "運搬棒F ASSY(国内)TU101",
+      "category": "未設定",
+      "item_type": "452494803101",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU101 8031",
+          "product_name": "TU101/TU101N/TU1012",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU101 8501-1",
+      "name": "取付板(TU101)",
+      "category": "未設定",
+      "item_type": "4524948501A0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU101 8501",
+          "product_name": "TU101/TU101N/TU1012",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU1012-01107-400",
+      "name": "ﾎﾞﾃﾞｨｰｻﾎﾟｰﾄASSY(TU1012)",
+      "category": "未設定",
+      "item_type": "45T210101107400",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU1012",
+          "product_name": "TU101/TU101N/TU1012",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU1012-55212-501",
+      "name": "ﾃｰﾌﾞﾙｳｪｲﾄ(TU1012)",
+      "category": "未設定",
+      "item_type": "45T210155212501",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU1012",
+          "product_name": "TU101/TU101N/TU1012",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU1012-S2-60230-500",
+      "name": "ﾋﾟｯﾄ固定板 (TU1012-S2)",
+      "category": "未設定",
+      "item_type": "45T21016023050000S02",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU1012",
+          "product_name": "TU101/TU101N/TU1012",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU1012-S4-60241-500",
+      "name": "ﾋﾟｯﾄﾌﾚｰﾑ(TU1012-S4)",
+      "category": "未設定",
+      "item_type": "45T21016024150000S04",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU1012",
+          "product_name": "TU101/TU101N/TU1012",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU101N-E10-00006-500",
+      "name": "電磁弁取付板(TU101N-E10)EG-ZN-C付",
+      "category": "未設定",
+      "item_type": "45TN10100006500E10",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU101N",
+          "product_name": "TU101/TU101N/TU1012",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU101N-11015-400",
+      "name": "ｲﾝﾅｰﾌﾚｰﾑASSY(TU101N)",
+      "category": "未設定",
+      "item_type": "45TN10111015400",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU101N",
+          "product_name": "TU101/TU101N/TU1012",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU101N-31801-500",
+      "name": "SPﾘﾝｸ(TU101N)",
+      "category": "未設定",
+      "item_type": "45TN10131801500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU101N",
+          "product_name": "TU101/TU101N/TU1012",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU101N-41101-5B0",
+      "name": "ﾃｰﾌﾞﾙﾌﾚｰﾑF(TU101N)",
+      "category": "未設定",
+      "item_type": "45TN101411015B0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU101N",
+          "product_name": "TU101/TU101N/TU1012",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU301+-11001-4C0",
+      "name": "ｲﾝﾅｰﾌﾚｰﾑASSY (TU301+)",
+      "category": "未設定",
+      "item_type": "45T301+110014C0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU301+",
+          "product_name": "TU301",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU301+-S10-11014-400",
+      "name": "ｲﾝﾅｰﾌﾚｰﾑASSY (TU301+-S10)",
+      "category": "未設定",
+      "item_type": "45T301+1101440000S10",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU301+",
+          "product_name": "TU301",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU301+-12009-500",
+      "name": "ﾊﾞﾙﾌﾞﾕﾆｯﾄ取付板 (TU301+)",
+      "category": "未設定",
+      "item_type": "45T301+12009500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU301+",
+          "product_name": "TU301",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU301+-S10-15006-500",
+      "name": "ﾕﾆｯﾄ制御盤(TU301+-S10)",
+      "category": "未設定",
+      "item_type": "45T301+1500650000S10",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU301+",
+          "product_name": "TU301",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU301+-15007-502",
+      "name": "ﾕﾆｯﾄ制御盤(TU301+)",
+      "category": "未設定",
+      "item_type": "45T301+15007502",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU301+",
+          "product_name": "TU301",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU301+-15043-500",
+      "name": "ｺﾈｸﾀｰｶﾊﾞｰ (TU301+)",
+      "category": "未設定",
+      "item_type": "45T301+15043500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU301+",
+          "product_name": "TU301",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU301+-17232-501",
+      "name": "ﾌｨﾙﾀｰｹｰｽ取付板 (TU301+)",
+      "category": "未設定",
+      "item_type": "45T301+17232501",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU301+",
+          "product_name": "TU301",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU301+-17601-500",
+      "name": "ｼｬｯﾄｵﾌﾊﾞﾙﾌﾞ取付板 (TU301+)",
+      "category": "未設定",
+      "item_type": "45T301+17601500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU301+",
+          "product_name": "TU301",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU301-11006-500",
+      "name": "ﾕﾆｯﾄﾊﾟﾈﾙﾌﾞﾗｹｯﾄ(TU301)",
+      "category": "未設定",
+      "item_type": "45TU30111006500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU301",
+          "product_name": "TU301",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU301-11010-500",
+      "name": "ｼﾞｮｲﾝﾄﾌﾞﾗｹｯﾄ(TU301)",
+      "category": "未設定",
+      "item_type": "45TU30111010500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU301",
+          "product_name": "TU301",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU301-11032-5A0",
+      "name": "ﾕﾆｯﾄｻｲﾄﾞｶﾊﾞｰ取付板A(TU301)",
+      "category": "未設定",
+      "item_type": "45TU301110325A0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU301",
+          "product_name": "TU301",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU301-11054-501",
+      "name": "ﾕﾆｯﾄｻｲﾄﾞｶﾊﾞｰ取付板B (TU301)",
+      "category": "未設定",
+      "item_type": "45TU30111054501",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU301",
+          "product_name": "TU301",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU301-12008-501",
+      "name": "ｱｼｽﾄﾌﾟﾚｰﾄ(TU301)",
+      "category": "未設定",
+      "item_type": "45TU30112008501",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU301",
+          "product_name": "TU301",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU301-S15-12013-500",
+      "name": "ｱｼｽﾄﾌﾟﾚｰﾄ(TU301-S15)",
+      "category": "未設定",
+      "item_type": "45TU3011201350000S15",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU301",
+          "product_name": "TU301",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU301-12403-500",
+      "name": "ｳｫｰﾏｰｶﾊﾞｰ上(TU301)",
+      "category": "未設定",
+      "item_type": "45TU30112403500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU301",
+          "product_name": "TU301",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU301-12404-500",
+      "name": "ｳｫｰﾏｰｶﾊﾞｰ下(TU301)",
+      "category": "未設定",
+      "item_type": "45TU30112404500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU301",
+          "product_name": "TU301",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU301-S15-15006-500",
+      "name": "ｻｰｷｯﾄﾊｳｼﾞﾝｸﾞ(TU301-S15)",
+      "category": "未設定",
+      "item_type": "45TU3011500650000S15",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU301",
+          "product_name": "TU301",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU301-15007-5A0",
+      "name": "ｻｰｷｯﾄﾊｳｼﾞﾝｸﾞ(TU301)",
+      "category": "未設定",
+      "item_type": "45TU301150075A0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU301",
+          "product_name": "TU301",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU301-26306-400",
+      "name": "ﾕﾆｯﾄ運搬棒ASSY(TU301)",
+      "category": "未設定",
+      "item_type": "45TU30126306400",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU301",
+          "product_name": "TU301",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU301-34706-500",
+      "name": "SPｱｼﾞｬｽﾀ-(TU301)",
+      "category": "未設定",
+      "item_type": "45TU30134706500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU301",
+          "product_name": "TU301",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU301-46003-502",
+      "name": "ﾍﾞｰｼｯｸｳｪｲﾄ(TU301)",
+      "category": "未設定",
+      "item_type": "45TU30146003502",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU301",
+          "product_name": "TU301",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU301-46005-5A1",
+      "name": "TUGﾌﾟﾚｰﾄｳｪｲﾄ(TU301)",
+      "category": "未設定",
+      "item_type": "45TU301460055A1",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU301",
+          "product_name": "TU301",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU301-46006-5A2",
+      "name": "TUGﾌﾞﾛｯｸｳｪｲﾄ(TU301)",
+      "category": "未設定",
+      "item_type": "45TU301460065A2",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU301",
+          "product_name": "TU301",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU301-67004-500",
+      "name": "除菌ﾌｨﾙﾀｰ取付板(TU301)",
+      "category": "未設定",
+      "item_type": "45TU30167004500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU301",
+          "product_name": "TU301",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU301-67503-500",
+      "name": "ｶｰﾄﾘｯｼﾞ押さえ板(TU301)",
+      "category": "未設定",
+      "item_type": "45TU30167503500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU301",
+          "product_name": "TU301",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU301-67505-500",
+      "name": "ｿｹｯﾄ押さえ板(TU301)",
+      "category": "未設定",
+      "item_type": "45TU30167505500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU301",
+          "product_name": "TU301",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU301-67509-500",
+      "name": "ｶｰﾄﾘｯｼﾞ目隠し板(TU301)",
+      "category": "未設定",
+      "item_type": "45TU30167509500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU301",
+          "product_name": "TU301",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU301-97402-403",
+      "name": "ﾊﾞｯｸﾚｽﾄﾌﾚｰﾑASSY(TU301)",
+      "category": "未設定",
+      "item_type": "45TU30197402403",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU301",
+          "product_name": "TU301",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU301-97504-400",
+      "name": "ﾊﾞｯｸﾚｽﾄ昇降ﾌﾚｰﾑASSY(TU301)",
+      "category": "未設定",
+      "item_type": "45TU30197504400",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU301",
+          "product_name": "TU301",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU301-97514-501",
+      "name": "ﾊﾞｯｸﾚｽﾄ固定ﾌﾚｰﾑA(TU301)",
+      "category": "未設定",
+      "item_type": "45TU30197514501",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU301",
+          "product_name": "TU301",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU301-E2-00004-500",
+      "name": "ﾏｲｸﾛ固定軸B(TU301-E2)",
+      "category": "未設定",
+      "item_type": "45TU30100004500E2",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU301",
+          "product_name": "TU301",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU301-E2-00005-500",
+      "name": "ﾏｲｸﾛ固定軸止め板(TU301-E2)",
+      "category": "未設定",
+      "item_type": "45TU30100005500E2",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU301",
+          "product_name": "TU301",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "CL201 A0113",
+      "name": "ﾁｬﾝﾈﾙA ASSY(CL201)",
+      "category": "未設定",
+      "item_type": "4551200113A0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "CL201 A0113",
+          "product_name": "CL201",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "EL201-E3 0515",
+      "name": "ﾁｬﾝﾈﾙA ASSY(old)(EL201-E3)",
+      "category": "未設定",
+      "item_type": "455132051500E3",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "EL201",
+          "product_name": "CL201",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "ESA01-00508-500",
+      "name": "押さえ板(ESA01)",
+      "category": "未設定",
+      "item_type": "45514200508500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "ESA01",
+          "product_name": "ESA01",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "ESA01-00109-5B0",
+      "name": "ｼｬﾌﾄﾅｯﾄ(ESA01)",
+      "category": "未設定",
+      "item_type": "455142001095B0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "ESA01",
+          "product_name": "ESA01",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "ESA01-00321-500",
+      "name": "ハンガーシャフトナット(ESA01)",
+      "category": "未設定",
+      "item_type": "45514200321500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "ESA01",
+          "product_name": "ESA01",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "ESA01-00308-500",
+      "name": "回転軸ｼｬﾌﾄﾅｯﾄ(ESA01)",
+      "category": "未設定",
+      "item_type": "45514200308500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "ESA01",
+          "product_name": "ESA01",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "FWG01-01110-5A0",
+      "name": "電磁弁ｽﾃｲ(FWG01)",
+      "category": "未設定",
+      "item_type": "45FWG01011105A0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "FWG01",
+          "product_name": "FWG01",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "FWG01-02106-5A0",
+      "name": "希釈ﾀﾝｸｼﾞｮｲﾝﾄ押え板(FWG01)EG-ZN-C付",
+      "category": "未設定",
+      "item_type": "45FWG01021065A0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "FWG01",
+          "product_name": "FWG01",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "FWG01-02114-500",
+      "name": "ﾍｯﾄﾞ固定板(FWG01)EG-ZN-C付",
+      "category": "未設定",
+      "item_type": "45FWG0102114500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "FWG01",
+          "product_name": "FWG01",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "FWG01-03002-5B0",
+      "name": "ｴｱ用電磁弁ｽﾃｲ(FWG01)",
+      "category": "未設定",
+      "item_type": "45FWG01030025B0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "FWG01",
+          "product_name": "FWG01",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "FWG01-04021-5A0",
+      "name": "ﾍﾞｰｽﾏﾆﾎｰﾙﾄﾞ取付板(FWG01)",
+      "category": "未設定",
+      "item_type": "45FWG01040215A0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "FWG01",
+          "product_name": "FWG01",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "FWG01-05101-5C1",
+      "name": "薬液供給ｽﾃｲ(FWG01)",
+      "category": "未設定",
+      "item_type": "45FWG01051015C1",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "FWG01",
+          "product_name": "FWG01",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "FWG01-05201-5A0",
+      "name": "計量器ﾍﾞｰｽ(FWG01)",
+      "category": "未設定",
+      "item_type": "45FWG01052015A0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "FWG01",
+          "product_name": "FWG01",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "FWG01-07001-4C0",
+      "name": "ｲﾝﾅｰﾌﾚｰﾑASSY (FWG01)",
+      "category": "未設定",
+      "item_type": "45FWG01070014C0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "FWG01",
+          "product_name": "FWG01",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "FWG01-07009-5A0",
+      "name": "ｱﾝｶｰﾌﾟﾚｰﾄA (FWG01)",
+      "category": "未設定",
+      "item_type": "45FWG01070095A0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "FWG01",
+          "product_name": "FWG01",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "FWG01-09101-500",
+      "name": "ｱﾝｶｰﾌﾟﾚｰﾄB (FWG01)",
+      "category": "未設定",
+      "item_type": "45FWG0109101500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "FWG01",
+          "product_name": "FWG01",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "FWG01-11101-400",
+      "name": "ﾍﾞｰｽｲﾝﾅｰﾌﾚｰﾑ ASSY(FWG01)",
+      "category": "未設定",
+      "item_type": "45FWG0111101400",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "FWG01",
+          "product_name": "FWG01",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "MUX-25203-501",
+      "name": "ﾊﾞｷｭｰﾑｷｬｯﾌﾟ(MUX)EG-ZN-C",
+      "category": "未設定",
+      "item_type": "45MUX0025203501",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "MUX",
+          "product_name": "MUX",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "MUX-41302-5A4",
+      "name": "ﾊﾝｶﾞｰ取付板(1)(MUX)EG-ZN-C黒付",
+      "category": "未設定",
+      "item_type": "45MUX00413025A4",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "MUX",
+          "product_name": "MUX",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "MUX-61101-5C0",
+      "name": "ﾋﾟｯﾄﾌﾚｰﾑ(MUX)EG-ZN-C付",
+      "category": "未設定",
+      "item_type": "45MUX00611015C0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "MUX",
+          "product_name": "MUX",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "MUX-61113-5B0",
+      "name": "ﾊﾞﾙﾌﾞ取付板(MUX)",
+      "category": "未設定",
+      "item_type": "45MUX00611135B0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "MUX",
+          "product_name": "MUX",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "MUX-92201-4C0",
+      "name": "ﾄﾚｰｱｰﾑｶﾞｲﾄﾞR_ASSY(MUX)",
+      "category": "未設定",
+      "item_type": "45MUX00922014C0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "MUX",
+          "product_name": "MUX",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "MUX-92204-4A0",
+      "name": "ﾄﾚｰｱｰﾑｶﾞｲﾄﾞL_ASSY(MUX)",
+      "category": "未設定",
+      "item_type": "45MUX00922044A0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "MUX",
+          "product_name": "MUX",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "MUX-95104-500",
+      "name": "角度調節ﾛｯﾄﾞ(MUX)",
+      "category": "未設定",
+      "item_type": "45MUX0095104500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "MUX",
+          "product_name": "MUX",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "MUX-41312-5B3",
+      "name": "ﾊﾝｶﾞｰ取付板（2）左右利A(MUX)",
+      "category": "未設定",
+      "item_type": "45MUX00413125B3",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "MUX",
+          "product_name": "MUX",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "MUX-61112-5A0",
+      "name": "ﾊﾞﾙﾌﾞﾎｰﾙｶﾊﾞｰ(MUX)",
+      "category": "未設定",
+      "item_type": "45MUX00611125A0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "MUX",
+          "product_name": "MUX",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "MUX-96104-5B1",
+      "name": "ｶｯﾄﾌｨﾙﾀ取付板(MUX)EG-ZN-C付",
+      "category": "未設定",
+      "item_type": "45MUX00961045B1",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "MUX",
+          "product_name": "MUX",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "MUX-41305-5A2",
+      "name": "ﾊﾝｶﾞｰ取付板(2)右利B)(MUX)EG-ZN-C黒付",
+      "category": "未設定",
+      "item_type": "45MUX00413055A2",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "MUX",
+          "product_name": "MUX",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "MUX-61125-500",
+      "name": "ﾋﾟｯﾄ固定板(MUX)EG-ZN-C付",
+      "category": "未設定",
+      "item_type": "45MUX0061125500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "MUX",
+          "product_name": "MUX",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "RFA5-02604-5B1",
+      "name": "ﾊﾝﾄﾞﾙﾎﾟｰﾙ下(RFA5)EG-ZN-C付",
+      "category": "未設定",
+      "item_type": "452605026045B1",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "RFA5",
+          "product_name": "RFA5",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "RFA5-02610-5A0",
+      "name": "ﾊﾝﾄﾞﾙ中間板(RFA5)EG-ZN-C付",
+      "category": "未設定",
+      "item_type": "452605026105A0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "RFA5",
+          "product_name": "RFA5",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "RFA5-02608-5B0",
+      "name": "ﾊﾝﾄﾞﾙ支柱(RFA5)酸洗処理",
+      "category": "未設定",
+      "item_type": "452605026085B0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "RFA5",
+          "product_name": "RFA5",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "RFA5-02603-5A0",
+      "name": "ﾊﾝﾄﾞﾙﾍﾞｰｽ(RFA5)EG-ZN-C付",
+      "category": "未設定",
+      "item_type": "452605026035A0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "RFA5",
+          "product_name": "RFA5",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "[ﾊﾞﾙｸ]TU90 8019-2",
+      "name": "運搬棒",
+      "category": "未設定",
+      "item_type": "452510801902",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "[ﾊﾞﾙｸ]TU90 8019",
+          "product_name": "TU90",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "VM115-10008-4B0",
+      "name": "本体ｼｬｰｼASSY (VM115)",
+      "category": "未設定",
+      "item_type": "45VM115100084B0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "VM115",
+          "product_name": "VM115",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "VTC1 0540-1",
+      "name": "連結ﾌﾞﾗｹｯﾄASSY(VTC1)",
+      "category": "未設定",
+      "item_type": "4525940540",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "VTC1 0540",
+          "product_name": "VTC1/VTC3",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "VTC3-01217-500",
+      "name": "ｿｹｯﾄ押さえ板(VTC3)EG-ZN-C付",
+      "category": "未設定",
+      "item_type": "45VTC0301217500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "VTC3",
+          "product_name": "VTC1/VTC3",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "VTC3-41007-500",
+      "name": "ﾄｯﾌﾟｶﾊﾞｰﾌﾚｰﾑ(VTC3)EG-ZN-C付",
+      "category": "未設定",
+      "item_type": "45VTC0341007500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "VTC3",
+          "product_name": "VTC1/VTC3",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "M140-85101-501",
+      "name": "薬ﾋﾞﾝﾎﾙﾀﾞｰ受け板 (MTEU1-33001)",
+      "category": "未設定",
+      "item_type": "45047285101501",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "M140",
+          "product_name": "MTEC1/MTEU1",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "M141-10110-503",
+      "name": "ﾍﾟﾀﾞﾙ裏板(MTEC1 11011)三価ﾕﾆｸﾛ鍍金",
+      "category": "未設定",
+      "item_type": "45047310110503",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "M141",
+          "product_name": "MTEC1/MTEU1",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "M141-37101-501",
+      "name": "ｱｰﾑﾚｽﾄﾍﾞｰｽ板 (MTEC1-20701)",
+      "category": "未設定",
+      "item_type": "45047337101501",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "M141",
+          "product_name": "MTEC1/MTEU1",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "M141-41205-502",
+      "name": "ｸﾗﾝｸA (MTEC1-22104)",
+      "category": "未設定",
+      "item_type": "45047341205502",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "M141",
+          "product_name": "MTEC1/MTEU1",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "M141-44112-504",
+      "name": "固定ﾛｯﾄ (MTEC1-22207)",
+      "category": "未設定",
+      "item_type": "45047344112504",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "M141",
+          "product_name": "MTEC1/MTEU1",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "M141-44136-503",
+      "name": "ﾛｯｸ本体B (MTEC1-22222)",
+      "category": "未設定",
+      "item_type": "45047344136503",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "M141",
+          "product_name": "MTEC1/MTEU1",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "MTEC1-22229-500",
+      "name": "ﾍｯﾄﾞ取付台B(MTEC1)",
+      "category": "未設定",
+      "item_type": "45MTEC122229500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "MTEC1",
+          "product_name": "MTEC1/MTEU1",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "MTEC1-12001-500",
+      "name": "ﾍﾞｰｽ (MTEC1-12001)",
+      "category": "未設定",
+      "item_type": "45MTEC112001500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "MTEC1",
+          "product_name": "MTEC1/MTEU1",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "MTEC1-S1-12036-401",
+      "name": "ﾍﾞｰｽ(MTEC1-S1)",
+      "category": "未設定",
+      "item_type": "45MTEC112036401S1",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "MTEC1",
+          "product_name": "MTEC1/MTEU1",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "NDUM22-12001-501",
+      "name": "ﾁｭｰﾌﾞ取付板(NDUM22)",
+      "category": "未設定",
+      "item_type": "45900512001501",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "NDUM22",
+          "product_name": "学校関係",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "FC-600R A0006-1",
+      "name": "VR取付板(FC 600R)",
+      "category": "未設定",
+      "item_type": "4566110006A1",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "FC",
+          "product_name": "学校関係",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUMH23-18055-500",
+      "name": "SC基板取付板(TUMH23)",
+      "category": "未設定",
+      "item_type": "45901518055500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUMH23",
+          "product_name": "学校関係",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU86 A3230-1",
+      "name": "SPｱｼﾞｬｽﾀｰ(TU86)",
+      "category": "未設定",
+      "item_type": "4521703230",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU86 A3230",
+          "product_name": "TU86",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "OT-1 0018",
+      "name": "排油ﾊﾟｲﾌﾟASSY(OT-1)",
+      "category": "未設定",
+      "item_type": "4519060018",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "OT",
+          "product_name": "OT-1",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "OT-1 0019-1",
+      "name": "給油ﾊﾟｲﾌﾟASSY(OT-1)",
+      "category": "未設定",
+      "item_type": "4519060019",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "OT",
+          "product_name": "OT-1",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "FP-7 0009-1",
+      "name": "ｼﾘﾝﾀﾞｰ(FP-7)",
+      "category": "未設定",
+      "item_type": "4560110009",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "FP",
+          "product_name": "FP7",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "FP-7 0013-1",
+      "name": "ﾗﾑ(FP-7)",
+      "category": "未設定",
+      "item_type": "4560110013",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "FP",
+          "product_name": "FP7",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "FP7 0053",
+      "name": "ｺﾈｸﾀｰASSY (FP7)",
+      "category": "未設定",
+      "item_type": "4560110053",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "FP7 0053",
+          "product_name": "FP7",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "FP7 A0068",
+      "name": "ﾀﾝｸASSY(FP7)",
+      "category": "未設定",
+      "item_type": "4560110068A0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "FP7 A0068",
+          "product_name": "FP7",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU97N 6031",
+      "name": "ﾋﾟｯﾄﾌﾚｰﾑASSY(TU97N)",
+      "category": "未設定",
+      "item_type": "4525736031",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU97N 6031",
+          "product_name": "TU97N",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU97N A2105",
+      "name": "ﾎｰｽ固定金具(TU97N)",
+      "category": "未設定",
+      "item_type": "4525732105",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU97N A2105",
+          "product_name": "TU97N",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU97N A9011-1",
+      "name": "ﾛｰﾗｰﾎﾙﾀﾞｰ(TU97N)",
+      "category": "未設定",
+      "item_type": "4525739011A1",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU97N A9011",
+          "product_name": "TU97N",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "NB1-20220-500",
+      "name": "固定板 (NB1)",
+      "category": "未設定",
+      "item_type": "45NB00120220500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "NB1",
+          "product_name": "NB1",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "CSB1-21006-500",
+      "name": "ﾎﾙﾀﾞｰ底板(CSB1)EG-ZN-C付",
+      "category": "未設定",
+      "item_type": "45260121006500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "CSB1",
+          "product_name": "CSB1",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "R】MTEU1-ES-E6-00001-500",
+      "name": "補強底板A(MTEU1-ES-E6)",
+      "category": "未設定",
+      "item_type": "45MTEES00001500E6",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "R】MTEU1",
+          "product_name": "MTEU1-ES-E6",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "MT10-10061-501",
+      "name": "基板取付板 (MT10)",
+      "category": "未設定",
+      "item_type": "450605210061501",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "MT10",
+          "product_name": "MT10",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TLA01-00321-500",
+      "name": "ﾊﾝｶﾞｰｼｬﾌﾄﾅｯﾄ(TLA01)",
+      "category": "未設定",
+      "item_type": "45TLA0100321500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TLA01",
+          "product_name": "TLA01",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TLA01-00323-500",
+      "name": "回転軸ｼｬﾌﾄ(TLA01)",
+      "category": "未設定",
+      "item_type": "45TLA0100323500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TLA01",
+          "product_name": "TLA01",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TLA01-00405-500",
+      "name": "ﾊﾝｶﾞｰｼｬﾌﾄ(TLA01)",
+      "category": "未設定",
+      "item_type": "45TLA0100405500",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TLA01",
+          "product_name": "TLA01",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "EUA40-24101-401",
+      "name": "アームレスト右ASSY",
+      "category": "未設定",
+      "item_type": "A000215-45",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "EUA40",
+          "product_name": "ECA40",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "EUA40-24201-401",
+      "name": "アームレスト左ASSY",
+      "category": "未設定",
+      "item_type": "A000225-45",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "EUA40",
+          "product_name": "ECA40",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "MUX-62101-5A0",
+      "name": "別置ﾋﾟｯﾄﾌﾚｰﾑ",
+      "category": "未設定",
+      "item_type": "45MUX00621015A0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "MUX",
+          "product_name": "MUX",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA40-S28-62158-500",
+      "name": "ピット固定板（BS）",
+      "category": "未設定",
+      "item_type": "45TUA4062158500S28",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA40",
+          "product_name": "TUA40（BS）",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA40-S28-60504-500",
+      "name": "メインスイッチ補強板",
+      "category": "未設定",
+      "item_type": "45TUA4060504500S28",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA40",
+          "product_name": "TUA40（BS）",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA40-S28-60508-500",
+      "name": "メインスイッチカバー",
+      "category": "未設定",
+      "item_type": "45TUA4060508500S28",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA40",
+          "product_name": "TUA40（BS）",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA40-11202-5B0",
+      "name": "ベースン固定ホルダー（TUA40）",
+      "category": "未設定",
+      "item_type": "45TUA40112025B0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA40",
+          "product_name": "TUA40（BS）",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU97-1301",
+      "name": "VCジョイントASSＹ",
+      "category": "未設定",
+      "item_type": "4525651301",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU97",
+          "product_name": "TU92",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA20-S4-12206-500",
+      "name": "鉢洗い電磁弁取付板",
+      "category": "未設定",
+      "item_type": "45TUA2012206500S4",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA20",
+          "product_name": "TUA20",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TU97-A6715",
+      "name": "マイクロSW取付板",
+      "category": "未設定",
+      "item_type": "4525656715A0",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TU97",
+          "product_name": "TU97",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA20-E5-00001-500",
+      "name": "背板ウェイト",
+      "category": "未設定",
+      "item_type": "45TUA2000001500E5",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA20",
+          "product_name": "TUA20",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA20-E5-00002-500",
+      "name": "背板ウェイトC",
+      "category": "未設定",
+      "item_type": "45TUA2000002500E5",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA20",
+          "product_name": "TUA20",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA20-E5-00003-500",
+      "name": "リフタージョイントL",
+      "category": "未設定",
+      "item_type": "45TUA2000003500E5",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA20",
+          "product_name": "TUA20",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "TUA20-E5-00004-500",
+      "name": "リフタージョイントR",
+      "category": "未設定",
+      "item_type": "45TUA2000004500E5",
+      "inspection_items": [
+        "未設定"
+      ],
+      "cautions": [
+        "未設定"
+      ],
+      "storage": "未設定",
+      "image_description": "検査箇所",
+      "image_file": null,
+      "required_products": [
+        {
+          "product_id": "TUA20",
+          "product_name": "TUA20",
+          "notes": ""
+        }
+      ]
     }
   ]
 }

@@ -1,9 +1,11 @@
 import json
 import os
+import re
 from datetime import datetime
 from io import BytesIO
 
 import openpyxl
+import pandas as pd
 import streamlit as st
 from fpdf import FPDF
 
@@ -90,6 +92,132 @@ def load_inspection_template():
             items.append({"no": no, "item": item, "criteria": criteria or ""})
 
     return items
+
+
+def extract_product_from_drawing_number(drawing_number):
+    """
+    図番から製品IDを抽出
+    例: 【R】TUA60-BBBB-CCCC → TUA60
+    """
+    # 【R】を削除
+    clean_number = drawing_number.replace("【R】", "").strip()
+
+    # ハイフンで分割して最初の部分を取得
+    if "-" in clean_number:
+        return clean_number.split("-")[0]
+
+    return clean_number
+
+
+def parse_csv_file(uploaded_file):
+    """
+    CSVファイルをパースして部品データのリストを返す
+
+    CSVフォーマット:
+    - 1行目: ヘッダー
+    - 2列目のみ値がある行: 製品カテゴリ (その後の行はこの製品用の部品)
+    - 2,3,4列目に値がある行: 部品データ (品目, 図番, 品名)
+    """
+    parts_list = []
+    current_product_name = None
+
+    # CSVを読み込み
+    df = pd.read_csv(uploaded_file, header=0, encoding='utf-8-sig')
+
+    for idx, row in df.iterrows():
+        # 列のインデックスで取得（0始まり）
+        item_type = str(row.iloc[1]).strip() if pd.notna(row.iloc[1]) else ""
+        drawing_number = str(row.iloc[2]).strip() if pd.notna(row.iloc[2]) else ""
+        part_name = str(row.iloc[3]).strip() if pd.notna(row.iloc[3]) else ""
+
+        # 品目のみの行 = 製品カテゴリ
+        # 図番と品名が空（nanまたは空文字）の場合
+        if item_type and (not drawing_number or drawing_number == 'nan') and (not part_name or part_name == 'nan'):
+            current_product_name = item_type
+            continue
+
+        # 品目+図番+品名がある行 = 部品データ
+        if item_type and drawing_number and part_name and drawing_number != 'nan' and part_name != 'nan':
+            # 図番から製品IDを抽出
+            product_id = extract_product_from_drawing_number(drawing_number)
+
+            # 【R】を削除した図番をIDとして使用
+            clean_id = drawing_number.replace("【R】", "").strip()
+
+            part_data = {
+                "id": clean_id,
+                "name": part_name,
+                "category": "未設定",
+                "item_type": item_type,
+                "inspection_items": ["未設定"],
+                "cautions": ["未設定"],
+                "storage": "未設定",
+                "image_description": "検査箇所",
+                "image_file": None,
+                "required_products": []
+            }
+
+            # 製品情報を追加
+            if product_id and current_product_name:
+                part_data["required_products"].append({
+                    "product_id": product_id,
+                    "product_name": current_product_name,
+                    "notes": ""
+                })
+
+            parts_list.append(part_data)
+
+    return parts_list
+
+
+def check_duplicates(parts_to_import, existing_parts):
+    """
+    インポート対象の部品と既存部品で重複をチェック
+    """
+    existing_ids = {part["id"] for part in existing_parts}
+    duplicates = []
+    unique_parts = []
+
+    for part in parts_to_import:
+        if part["id"] in existing_ids:
+            duplicates.append(part)
+        else:
+            unique_parts.append(part)
+
+    return unique_parts, duplicates
+
+
+def import_parts_from_csv(parts_to_import, existing_parts, overwrite_duplicates=False):
+    """
+    CSVから読み込んだ部品をインポート
+    """
+    unique_parts, duplicates = check_duplicates(parts_to_import, existing_parts)
+
+    success_count = 0
+    skip_count = 0
+    error_count = 0
+
+    if overwrite_duplicates:
+        # 重複する部品を上書き
+        existing_dict = {part["id"]: part for part in existing_parts}
+        for dup_part in duplicates:
+            existing_dict[dup_part["id"]] = dup_part
+            success_count += 1
+
+        # ユニークな部品を追加
+        for part in unique_parts:
+            existing_dict[part["id"]] = part
+            success_count += 1
+
+        # 結果をリストに変換
+        result_parts = list(existing_dict.values())
+    else:
+        # 重複をスキップ
+        skip_count = len(duplicates)
+        success_count = len(unique_parts)
+        result_parts = existing_parts + unique_parts
+
+    return result_parts, success_count, skip_count, error_count, duplicates
 
 
 def auto_judge(item_no, result, criteria):
@@ -280,21 +408,70 @@ st.sidebar.title("🔍 検索・フィルタ")
 # Home button if not on main view
 if current_view != "main":
     if st.sidebar.button("🏠 ホームに戻る", width="stretch"):
+        # Keep filter parameters but clear view parameters
+        filters_to_keep = {}
+        if "selected_product" in st.query_params:
+            filters_to_keep["selected_product"] = st.query_params["selected_product"]
+        if "search_query" in st.query_params:
+            filters_to_keep["search_query"] = st.query_params["search_query"]
+        if "selected_category" in st.query_params:
+            filters_to_keep["selected_category"] = st.query_params["selected_category"]
+
         st.query_params.clear()
+        for key, value in filters_to_keep.items():
+            st.query_params[key] = value
         st.rerun()
     st.sidebar.markdown("---")
 
-# 製品で絞り込み
+# 製品で絞り込み（URLパラメータから復元）
+default_product_index = 0
+if "selected_product" in st.query_params:
+    saved_product = st.query_params["selected_product"]
+    if saved_product in products:
+        default_product_index = products.index(saved_product)
+
 selected_product = st.sidebar.selectbox(
     "製品で絞り込み",
     products,
+    index=default_product_index,
     help="特定の製品に必要な部品のみを表示"
 )
 
+# 製品選択が変わったらURLパラメータを更新
+if selected_product != products[default_product_index] or "selected_product" not in st.query_params:
+    st.query_params["selected_product"] = selected_product
+
+# 検索クエリ（URLパラメータから復元）
+default_search = st.query_params.get("search_query", "")
 search_query = st.sidebar.text_input(
-    "部品名・IDで検索", placeholder="例: ボルト, BLT-001"
+    "部品名・IDで検索",
+    placeholder="例: ボルト, BLT-001",
+    value=default_search
 )
-selected_category = st.sidebar.selectbox("カテゴリで絞り込み", categories)
+
+# 検索クエリが変わったらURLパラメータを更新
+if search_query != default_search:
+    if search_query:
+        st.query_params["search_query"] = search_query
+    elif "search_query" in st.query_params:
+        del st.query_params["search_query"]
+
+# カテゴリで絞り込み（URLパラメータから復元）
+default_category_index = 0
+if "selected_category" in st.query_params:
+    saved_category = st.query_params["selected_category"]
+    if saved_category in categories:
+        default_category_index = categories.index(saved_category)
+
+selected_category = st.sidebar.selectbox(
+    "カテゴリで絞り込み",
+    categories,
+    index=default_category_index
+)
+
+# カテゴリ選択が変わったらURLパラメータを更新
+if selected_category != categories[default_category_index] or "selected_category" not in st.query_params:
+    st.query_params["selected_category"] = selected_category
 
 # フィルタリング処理
 filtered_parts = parts_data.copy()
@@ -327,14 +504,29 @@ if selected_category != "すべて":
 st.sidebar.markdown("---")
 st.sidebar.info(f"該当部品: {len(filtered_parts)} 件")
 
-# 部品追加ボタン（まだセッションステートを使用）
+# 部品追加ボタン（ページ遷移に変更）
 st.sidebar.markdown("---")
 if st.sidebar.button("➕ 新規部品を追加", width="stretch"):
-    st.session_state.show_add_form = not st.session_state.show_add_form
+    st.query_params["view"] = "add_part"
+    # Keep current filters
+    if selected_product != "すべて":
+        st.query_params["selected_product"] = selected_product
+    if search_query:
+        st.query_params["search_query"] = search_query
+    if selected_category != "すべて":
+        st.query_params["selected_category"] = selected_category
+    st.rerun()
 
 # 検査表ボタン（ページ遷移に変更）
 if st.sidebar.button("📋 検査表を作成", width="stretch"):
     st.query_params["view"] = "inspection_form"
+    # Keep current filters
+    if selected_product != "すべて":
+        st.query_params["selected_product"] = selected_product
+    if search_query:
+        st.query_params["search_query"] = search_query
+    if selected_category != "すべて":
+        st.query_params["selected_category"] = selected_category
     st.rerun()
 
 
@@ -501,8 +693,251 @@ def show_product_details_page(product_id, product_name, parts_data):
                 key=f"view_part_{part['id']}",
                 width="stretch"
             ):
+                # Keep the product filter when navigating to part details
                 st.query_params["view"] = "part_details"
                 st.query_params["part_id"] = part["id"]
+                if "selected_product" in st.query_params:
+                    # Keep the current product filter
+                    pass  # Already in query params
+                st.rerun()
+
+
+def show_add_part_page(parts_data):
+    """Display add part page"""
+    st.title("➕ 新規部品登録")
+    st.markdown("---")
+
+    # タブで手動登録とCSV一括登録を切り替え
+    tab1, tab2 = st.tabs(["✍️ 手動登録", "📁 CSV一括登録"])
+
+    with tab1:
+        # 手動登録フォーム
+        with st.form("add_part_form"):
+            col1, col2 = st.columns(2)
+
+            with col1:
+                new_id = st.text_input("部品ID *", placeholder="例: BLT-002")
+                new_name = st.text_input("部品名 *", placeholder="例: 六角ボルト M12")
+                new_category = st.text_input("カテゴリ *", placeholder="例: 締結部品")
+                new_storage = st.text_input(
+                    "保管場所 *", placeholder="例: A棟-1F-棚番号A-15"
+                )
+
+            with col2:
+                new_inspection = st.text_area(
+                    "検査項目 *（1行に1項目）",
+                    placeholder="ねじ山の損傷確認\n頭部の変形確認\n表面の錆確認",
+                    height=100
+                )
+                new_cautions = st.text_area(
+                    "注意点（1行に1項目）",
+                    placeholder="トルク管理が重要\n再使用回数に注意",
+                    height=100
+                )
+                new_image_desc = st.text_input(
+                    "検査箇所イメージの説明",
+                    placeholder="例: ボルト頭部・ねじ山部の検査ポイント"
+                )
+                new_required_products = st.text_area(
+                    "必須製品（任意、1行に1製品）",
+                    placeholder="TUA60|TUA60 アセンブリ|主軸固定用\nTUA70|TUA70 ユニット|予備用",
+                    height=80,
+                    help="形式: 製品ID|製品名|用途（パイプ区切り）"
+                )
+
+            # 画像アップロード
+            uploaded_image = st.file_uploader(
+                "検査箇所の画像（任意）",
+                type=["png", "jpg", "jpeg"],
+                help="PNG, JPG, JPEG形式の画像をアップロードできます"
+            )
+
+            submitted = st.form_submit_button("登録", width="stretch")
+
+            if submitted:
+                # バリデーション
+                if not new_id or not new_name or not new_category or not new_storage:
+                    st.error("必須項目（*）を入力してください。")
+                elif any(part["id"] == new_id for part in parts_data):
+                    st.error(f"部品ID '{new_id}' は既に存在します。")
+                elif not new_inspection.strip():
+                    st.error("検査項目を1つ以上入力してください。")
+                else:
+                    # 必須製品のパース
+                    required_products = []
+                    if new_required_products.strip():
+                        for line in new_required_products.split("\n"):
+                            if line.strip():
+                                parts_info = [p.strip() for p in line.split("|")]
+                                if len(parts_info) >= 2:
+                                    product = {
+                                        "product_id": parts_info[0],
+                                        "product_name": parts_info[1],
+                                        "notes": (
+                                            parts_info[2]
+                                            if len(parts_info) >= 3
+                                            else ""
+                                        )
+                                    }
+                                    required_products.append(product)
+
+                    # 新規部品データを作成
+                    new_part = {
+                        "id": new_id,
+                        "name": new_name,
+                        "category": new_category,
+                        "inspection_items": [
+                            item.strip() for item in new_inspection.split("\n")
+                            if item.strip()
+                        ],
+                        "cautions": [
+                            item.strip() for item in new_cautions.split("\n")
+                            if item.strip()
+                        ] if new_cautions.strip() else ["特になし"],
+                        "storage": new_storage,
+                        "image_description": (
+                            new_image_desc if new_image_desc else "検査箇所"
+                        ),
+                        "required_products": required_products
+                    }
+
+                    # JSONに保存（画像も含む）
+                    save_part(new_part, uploaded_image)
+                    st.success(f"部品 '{new_name}' を登録しました！")
+
+                    # ホームに戻るボタンを表示
+                    if st.button("🏠 ホームに戻る", type="primary"):
+                        st.query_params.clear()
+                        st.rerun()
+
+    with tab2:
+        # CSV一括登録フォーム
+        st.markdown("#### 📁 CSVファイルから部品を一括登録")
+        st.caption(
+            "CSVフォーマット: 2列目=品目、3列目=図番、4列目=品名。"
+            "品目のみの行は製品カテゴリを表します。"
+        )
+
+        # セッション状態の初期化
+        if "csv_parsed_parts" not in st.session_state:
+            st.session_state.csv_parsed_parts = []
+        if "csv_import_result" not in st.session_state:
+            st.session_state.csv_import_result = None
+
+        # CSVファイルアップロード
+        uploaded_csv = st.file_uploader(
+            "CSVファイルを選択",
+            type=["csv"],
+            help="部品情報が記載されたCSVファイルをアップロードしてください",
+            key="csv_uploader"
+        )
+
+        if uploaded_csv is not None:
+            try:
+                # CSVをパース
+                parsed_parts = parse_csv_file(uploaded_csv)
+                st.session_state.csv_parsed_parts = parsed_parts
+
+                if len(parsed_parts) > 0:
+                    st.success(f"✅ {len(parsed_parts)} 件の部品データを読み込みました")
+
+                    # プレビューテーブル
+                    st.markdown("#### 📋 プレビュー")
+                    preview_data = []
+                    for part in parsed_parts[:10]:  # 最初の10件を表示
+                        preview_data.append({
+                            "部品ID": part["id"],
+                            "部品名": part["name"],
+                            "品目": part.get("item_type", ""),
+                            "製品": (
+                                part["required_products"][0]["product_name"]
+                                if part["required_products"]
+                                else ""
+                            )
+                        })
+
+                    st.dataframe(preview_data, use_container_width=True)
+
+                    if len(parsed_parts) > 10:
+                        st.caption(f"...他 {len(parsed_parts) - 10} 件")
+
+                    # 重複チェック
+                    unique_parts, duplicates = check_duplicates(
+                        parsed_parts, parts_data
+                    )
+
+                    if duplicates:
+                        st.warning(
+                            f"⚠️ {len(duplicates)} 件の重複する部品IDがあります"
+                        )
+                        with st.expander("重複する部品ID一覧"):
+                            for dup in duplicates:
+                                st.markdown(f"- {dup['id']}: {dup['name']}")
+
+                    # インポート設定
+                    st.markdown("#### ⚙️ インポート設定")
+                    overwrite = st.checkbox(
+                        "重複する部品を上書きする",
+                        value=False,
+                        help="チェックすると、既存の部品データを上書きします"
+                    )
+
+                    # インポートボタン
+                    if st.button(
+                        f"📥 {len(parsed_parts)} 件の部品をインポート",
+                        type="primary",
+                        width="stretch"
+                    ):
+                        # インポート実行
+                        result_parts, success, skip, error, dup_list = (
+                            import_parts_from_csv(
+                                parsed_parts, parts_data, overwrite
+                            )
+                        )
+
+                        # データを保存
+                        save_parts_data(result_parts)
+
+                        # 結果を保存
+                        st.session_state.csv_import_result = {
+                            "success": success,
+                            "skip": skip,
+                            "error": error,
+                            "duplicates": dup_list
+                        }
+
+                        st.rerun()
+
+                else:
+                    st.warning("⚠️ CSVファイルに有効な部品データが見つかりませんでした")
+
+            except Exception as e:
+                st.error(f"❌ CSVファイルの読み込み中にエラーが発生しました: {str(e)}")
+
+        # インポート結果の表示
+        if st.session_state.csv_import_result:
+            result = st.session_state.csv_import_result
+            st.markdown("---")
+            st.markdown("#### 📊 インポート結果")
+
+            col1, col2, col3 = st.columns(3)
+            with col1:
+                st.metric("✅ 成功", f"{result['success']} 件")
+            with col2:
+                st.metric("⏭️ スキップ", f"{result['skip']} 件")
+            with col3:
+                st.metric("❌ エラー", f"{result['error']} 件")
+
+            if result["skip"] > 0:
+                with st.expander("スキップした部品の詳細"):
+                    for dup in result["duplicates"]:
+                        st.markdown(f"- {dup['id']}: {dup['name']} (重複)")
+
+            # ホームに戻るボタン
+            if st.button("🏠 ホームに戻る", type="primary", key="home_after_import"):
+                st.session_state.csv_import_result = None
+                st.session_state.csv_parsed_parts = []
+                st.query_params.clear()
                 st.rerun()
 
 
@@ -772,6 +1207,8 @@ elif current_view == "product_details" and selected_product_id_from_url:
         if st.button("ホームに戻る"):
             st.query_params.clear()
             st.rerun()
+elif current_view == "add_part":
+    show_add_part_page(parts_data)
 elif current_view == "inspection_form":
     show_inspection_form_page(parts_data)
 else:
@@ -848,11 +1285,18 @@ else:
 
                 if st.button(
                     "製品詳細を見る",
-                    key=f"product_{product_id}",
+                    key=f"product_{product_id}_{idx}",
                     width="stretch"
                 ):
                     st.query_params["view"] = "product_details"
                     st.query_params["product_id"] = product_id
+                    # Keep current filters
+                    if selected_product != "すべて":
+                        st.query_params["selected_product"] = selected_product
+                    if search_query:
+                        st.query_params["search_query"] = search_query
+                    if selected_category != "すべて":
+                        st.query_params["selected_category"] = selected_category
                     st.rerun()
 
         st.markdown("---")
@@ -861,99 +1305,233 @@ else:
     if st.session_state.show_add_form:
         st.subheader("➕ 新規部品登録")
 
-        with st.form("add_part_form"):
-            col1, col2 = st.columns(2)
+        # タブで手動登録とCSV一括登録を切り替え
+        tab1, tab2 = st.tabs(["✍️ 手動登録", "📁 CSV一括登録"])
 
-            with col1:
-                new_id = st.text_input("部品ID *", placeholder="例: BLT-002")
-                new_name = st.text_input("部品名 *", placeholder="例: 六角ボルト M12")
-                new_category = st.text_input("カテゴリ *", placeholder="例: 締結部品")
-                new_storage = st.text_input(
-                    "保管場所 *", placeholder="例: A棟-1F-棚番号A-15"
+        with tab1:
+            # 手動登録フォーム
+            with st.form("add_part_form"):
+                col1, col2 = st.columns(2)
+
+                with col1:
+                    new_id = st.text_input("部品ID *", placeholder="例: BLT-002")
+                    new_name = st.text_input("部品名 *", placeholder="例: 六角ボルト M12")
+                    new_category = st.text_input("カテゴリ *", placeholder="例: 締結部品")
+                    new_storage = st.text_input(
+                        "保管場所 *", placeholder="例: A棟-1F-棚番号A-15"
+                    )
+
+                with col2:
+                    new_inspection = st.text_area(
+                        "検査項目 *（1行に1項目）",
+                        placeholder="ねじ山の損傷確認\n頭部の変形確認\n表面の錆確認",
+                        height=100
+                    )
+                    new_cautions = st.text_area(
+                        "注意点（1行に1項目）",
+                        placeholder="トルク管理が重要\n再使用回数に注意",
+                        height=100
+                    )
+                    new_image_desc = st.text_input(
+                        "検査箇所イメージの説明",
+                        placeholder="例: ボルト頭部・ねじ山部の検査ポイント"
+                    )
+                    new_required_products = st.text_area(
+                        "必須製品（任意、1行に1製品）",
+                        placeholder="TUA60|TUA60 アセンブリ|主軸固定用\nTUA70|TUA70 ユニット|予備用",
+                        height=80,
+                        help="形式: 製品ID|製品名|用途（パイプ区切り）"
+                    )
+
+                # 画像アップロード
+                uploaded_image = st.file_uploader(
+                    "検査箇所の画像（任意）",
+                    type=["png", "jpg", "jpeg"],
+                    help="PNG, JPG, JPEG形式の画像をアップロードできます"
                 )
 
-            with col2:
-                new_inspection = st.text_area(
-                    "検査項目 *（1行に1項目）",
-                    placeholder="ねじ山の損傷確認\n頭部の変形確認\n表面の錆確認",
-                    height=100
-                )
-                new_cautions = st.text_area(
-                    "注意点（1行に1項目）",
-                    placeholder="トルク管理が重要\n再使用回数に注意",
-                    height=100
-                )
-                new_image_desc = st.text_input(
-                    "検査箇所イメージの説明",
-                    placeholder="例: ボルト頭部・ねじ山部の検査ポイント"
-                )
-                new_required_products = st.text_area(
-                    "必須製品（任意、1行に1製品）",
-                    placeholder="TUA60|TUA60 アセンブリ|主軸固定用\nTUA70|TUA70 ユニット|予備用",
-                    height=80,
-                    help="形式: 製品ID|製品名|用途（パイプ区切り）"
-                )
+                submitted = st.form_submit_button("登録", width="stretch")
 
-            # 画像アップロード
-            uploaded_image = st.file_uploader(
-                "検査箇所の画像（任意）",
-                type=["png", "jpg", "jpeg"],
-                help="PNG, JPG, JPEG形式の画像をアップロードできます"
+                if submitted:
+                    # バリデーション
+                    if not new_id or not new_name or not new_category or not new_storage:
+                        st.error("必須項目（*）を入力してください。")
+                    elif any(part["id"] == new_id for part in parts_data):
+                        st.error(f"部品ID '{new_id}' は既に存在します。")
+                    elif not new_inspection.strip():
+                        st.error("検査項目を1つ以上入力してください。")
+                    else:
+                        # 必須製品のパース
+                        required_products = []
+                        if new_required_products.strip():
+                            for line in new_required_products.split("\n"):
+                                if line.strip():
+                                    parts_info = [p.strip() for p in line.split("|")]
+                                    if len(parts_info) >= 2:
+                                        product = {
+                                            "product_id": parts_info[0],
+                                            "product_name": parts_info[1],
+                                            "notes": (
+                                                parts_info[2]
+                                                if len(parts_info) >= 3
+                                                else ""
+                                            )
+                                        }
+                                        required_products.append(product)
+
+                        # 新規部品データを作成
+                        new_part = {
+                            "id": new_id,
+                            "name": new_name,
+                            "category": new_category,
+                            "inspection_items": [
+                                item.strip() for item in new_inspection.split("\n")
+                                if item.strip()
+                            ],
+                            "cautions": [
+                                item.strip() for item in new_cautions.split("\n")
+                                if item.strip()
+                            ] if new_cautions.strip() else ["特になし"],
+                            "storage": new_storage,
+                            "image_description": (
+                                new_image_desc if new_image_desc else "検査箇所"
+                            ),
+                            "required_products": required_products
+                        }
+
+                        # JSONに保存（画像も含む）
+                        save_part(new_part, uploaded_image)
+                        st.success(f"部品 '{new_name}' を登録しました！")
+                        st.session_state.show_add_form = False
+                        st.rerun()
+
+        with tab2:
+            # CSV一括登録フォーム
+            st.markdown("#### 📁 CSVファイルから部品を一括登録")
+            st.caption(
+                "CSVフォーマット: 2列目=品目、3列目=図番、4列目=品名。"
+                "品目のみの行は製品カテゴリを表します。"
             )
 
-            submitted = st.form_submit_button("登録", width="stretch")
+            # セッション状態の初期化
+            if "csv_parsed_parts" not in st.session_state:
+                st.session_state.csv_parsed_parts = []
+            if "csv_import_result" not in st.session_state:
+                st.session_state.csv_import_result = None
 
-            if submitted:
-                # バリデーション
-                if not new_id or not new_name or not new_category or not new_storage:
-                    st.error("必須項目（*）を入力してください。")
-                elif any(part["id"] == new_id for part in parts_data):
-                    st.error(f"部品ID '{new_id}' は既に存在します。")
-                elif not new_inspection.strip():
-                    st.error("検査項目を1つ以上入力してください。")
-                else:
-                    # 必須製品のパース
-                    required_products = []
-                    if new_required_products.strip():
-                        for line in new_required_products.split("\n"):
-                            if line.strip():
-                                parts_info = [p.strip() for p in line.split("|")]
-                                if len(parts_info) >= 2:
-                                    product = {
-                                        "product_id": parts_info[0],
-                                        "product_name": parts_info[1],
-                                        "notes": (
-                                            parts_info[2]
-                                            if len(parts_info) >= 3
-                                            else ""
-                                        )
-                                    }
-                                    required_products.append(product)
+            # CSVファイルアップロード
+            uploaded_csv = st.file_uploader(
+                "CSVファイルを選択",
+                type=["csv"],
+                help="部品情報が記載されたCSVファイルをアップロードしてください",
+                key="csv_uploader"
+            )
 
-                    # 新規部品データを作成
-                    new_part = {
-                        "id": new_id,
-                        "name": new_name,
-                        "category": new_category,
-                        "inspection_items": [
-                            item.strip() for item in new_inspection.split("\n")
-                            if item.strip()
-                        ],
-                        "cautions": [
-                            item.strip() for item in new_cautions.split("\n")
-                            if item.strip()
-                        ] if new_cautions.strip() else ["特になし"],
-                        "storage": new_storage,
-                        "image_description": (
-                            new_image_desc if new_image_desc else "検査箇所"
-                        ),
-                        "required_products": required_products
-                    }
+            if uploaded_csv is not None:
+                try:
+                    # CSVをパース
+                    parsed_parts = parse_csv_file(uploaded_csv)
+                    st.session_state.csv_parsed_parts = parsed_parts
 
-                    # JSONに保存（画像も含む）
-                    save_part(new_part, uploaded_image)
-                    st.success(f"部品 '{new_name}' を登録しました！")
-                    st.session_state.show_add_form = False
+                    if len(parsed_parts) > 0:
+                        st.success(f"✅ {len(parsed_parts)} 件の部品データを読み込みました")
+
+                        # プレビューテーブル
+                        st.markdown("#### 📋 プレビュー")
+                        preview_data = []
+                        for part in parsed_parts[:10]:  # 最初の10件を表示
+                            preview_data.append({
+                                "部品ID": part["id"],
+                                "部品名": part["name"],
+                                "品目": part.get("item_type", ""),
+                                "製品": (
+                                    part["required_products"][0]["product_name"]
+                                    if part["required_products"]
+                                    else ""
+                                )
+                            })
+
+                        st.dataframe(preview_data, use_container_width=True)
+
+                        if len(parsed_parts) > 10:
+                            st.caption(f"...他 {len(parsed_parts) - 10} 件")
+
+                        # 重複チェック
+                        unique_parts, duplicates = check_duplicates(
+                            parsed_parts, parts_data
+                        )
+
+                        if duplicates:
+                            st.warning(
+                                f"⚠️ {len(duplicates)} 件の重複する部品IDがあります"
+                            )
+                            with st.expander("重複する部品ID一覧"):
+                                for dup in duplicates:
+                                    st.markdown(f"- {dup['id']}: {dup['name']}")
+
+                        # インポート設定
+                        st.markdown("#### ⚙️ インポート設定")
+                        overwrite = st.checkbox(
+                            "重複する部品を上書きする",
+                            value=False,
+                            help="チェックすると、既存の部品データを上書きします"
+                        )
+
+                        # インポートボタン
+                        if st.button(
+                            f"📥 {len(parsed_parts)} 件の部品をインポート",
+                            type="primary",
+                            width="stretch"
+                        ):
+                            # インポート実行
+                            result_parts, success, skip, error, dup_list = (
+                                import_parts_from_csv(
+                                    parsed_parts, parts_data, overwrite
+                                )
+                            )
+
+                            # データを保存
+                            save_parts_data(result_parts)
+
+                            # 結果を保存
+                            st.session_state.csv_import_result = {
+                                "success": success,
+                                "skip": skip,
+                                "error": error,
+                                "duplicates": dup_list
+                            }
+
+                            st.rerun()
+
+                    else:
+                        st.warning("⚠️ CSVファイルに有効な部品データが見つかりませんでした")
+
+                except Exception as e:
+                    st.error(f"❌ CSVファイルの読み込み中にエラーが発生しました: {str(e)}")
+
+            # インポート結果の表示
+            if st.session_state.csv_import_result:
+                result = st.session_state.csv_import_result
+                st.markdown("---")
+                st.markdown("#### 📊 インポート結果")
+
+                col1, col2, col3 = st.columns(3)
+                with col1:
+                    st.metric("✅ 成功", f"{result['success']} 件")
+                with col2:
+                    st.metric("⏭️ スキップ", f"{result['skip']} 件")
+                with col3:
+                    st.metric("❌ エラー", f"{result['error']} 件")
+
+                if result["skip"] > 0:
+                    with st.expander("スキップした部品の詳細"):
+                        for dup in result["duplicates"]:
+                            st.markdown(f"- {dup['id']}: {dup['name']} (重複)")
+
+                # 結果をクリア
+                if st.button("結果をクリアして新しいファイルをインポート"):
+                    st.session_state.csv_import_result = None
+                    st.session_state.csv_parsed_parts = []
                     st.rerun()
 
         st.markdown("---")
@@ -1011,8 +1589,15 @@ else:
                     key=f"btn_{part['id']}",
                     width="stretch"
                 ):
+                    # Keep current filters when navigating to details
                     st.query_params["view"] = "part_details"
                     st.query_params["part_id"] = part["id"]
+                    if selected_product != "すべて":
+                        st.query_params["selected_product"] = selected_product
+                    if search_query:
+                        st.query_params["search_query"] = search_query
+                    if selected_category != "すべて":
+                        st.query_params["selected_category"] = selected_category
                     st.rerun()
 
 
